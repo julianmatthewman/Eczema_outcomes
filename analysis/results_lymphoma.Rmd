@@ -10,12 +10,51 @@ editor_options:
 ```{r include=FALSE}
 library(targets)
 library(tidyverse)
+library(DT)
 ```
 
+Specify relevant results:
 ```{r}
-results <- tar_read(results_regression) %>% filter(outcome=="lymphoma", term=="eczema")
-results
+exposures <- c("eczema")
+outcomes <- c("lymphoma")
+models <- c("crude", "adjusted_sex", "adjusted_sex_bmi")
+exclusions <- c("none", "asthma")
 ```
+
+
+The following results are relevant for this study:
+```{r echo=FALSE}
+results <- tar_read(results_regression) %>% 
+    filter(term %in% exposures,
+           exposure %in% exposures,
+           outcome %in% outcomes,
+           model %in% models,
+           exclusion %in% exclusions)
+
+results %>% 
+    select(exposure, outcome, model, exclusion) %>% 
+    datatable()
+```
+
+The following results are not relevant for the selected exposures and outcomes and were dropped:
+```{r echo=FALSE}
+results_dropped <- tar_read(results_regression) %>% 
+    filter(
+        (term %in% exposures &
+             exposure %in% exposures &
+             outcome %in% outcomes)
+        &
+            (!(model %in% models) |
+                 !(exclusion %in% exclusions)
+            )
+    )
+
+results_dropped %>% 
+    select(exposure, outcome, model, exclusion) %>% 
+    datatable()
+
+```
+
 
 ```{r}
 results %>% 

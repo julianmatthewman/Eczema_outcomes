@@ -8,6 +8,12 @@ editor_options:
   chunk_output_type: console
 ---
 
-Studies
-### [results_fractures](results_fractures.html) {.unnumbered}
-### [results_lymphoma](results_lymphoma.html) {.unnumbered}
+## Studies
+#### [results_fractures](results_fractures.html)
+#### [results_lymphoma](results_lymphoma.html)
+
+## Shared resources
+#### Cohort definition
+#### Codelists
+#### Sensitivity Analyses
+#### Exclusions

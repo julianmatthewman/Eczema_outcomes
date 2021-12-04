@@ -92,6 +92,12 @@ study <- list(
 	    c("eczema")
 	),
 	
+	# Specify exclusions
+	tar_target(
+	    exclusion,
+	    c(NA, "lymphoma", "asthma")
+	),
+	
 	
 	#Specify analyses
 	tar_target(
@@ -129,14 +135,19 @@ study <- list(
 		cohort_eczema, 
 		create_cohort_eczema(main_cohort, combined_eventdata),
 	),
+	tar_target(
+	    cohort_post_exclusion,
+	    create_cohort_post_exclusions(cohort_eczema, exclusion),
+	    pattern = map(exclusion)
+	),
 	
 	
 	
 	# Analysis -------------------------------------------------------------------
 	tar_target(
 		results_regression, 
-		analysis_regression(cohort_eczema, exposure, outcome, model),
-		pattern = cross(exposure, outcome, model)
+		analysis_regression(cohort_post_exclusion, exposure, outcome, model, exclusion),
+		pattern = cross(cohort_post_exclusion, exposure, outcome, model)
 		),
 	
 
@@ -146,23 +157,9 @@ study <- list(
 	tar_target(
 	    results_fractures,
 	    command = {
-	        # Scan for targets of tar_read() and tar_load()
-	        !!tar_knitr_deps_expr(here("analysis", "results_fractures.Rmd"))
-	        # Explicitly mention any functions used from R/functions.R
-	        # list(
-	        #     raw_entity_data_read
-	        # )
-	        
-	        # Build the report
-	        workflowr::wflow_build(
-	            here("analysis", "results_fractures.Rmd")
-	        )
-	        
-	        # Track the input Rmd file (and not the rendered HTML file).
-	        # Make the path relative to keep the project portable.
+	        workflowr::wflow_build(here("analysis", "results_fractures.Rmd"))
 	        fs::path_rel(here("analysis", "results_fractures.Rmd"))
 	    },
-	    # Track the files returned by the command
 	    format = "file"
 	),
 	tar_target(
