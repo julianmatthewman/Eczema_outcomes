@@ -16,3 +16,12 @@ library(tidyverse)
 tar_read(results_regression) %>% filter(outcome=="fractures")
 ```
 
+```{r}
+results %>% 
+    ggplot(aes(x=model, y=estimate)) +
+    geom_pointrange(aes(ymin=conf.low, ymax=conf.high)) +
+    coord_flip() +
+    geom_hline(yintercept=1, lty=2)
+
+```
+
