@@ -2,7 +2,7 @@
 #' @description Load dummy datasets and path names, and writes them to files
 
 make_dummy_data <- function() {
-	library(dplyr)
+	library(tidyverse)
     library(lubridate)
 
 # Specifications ----------------------------------------------------------

@@ -385,16 +385,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree5bfe86b009b4afd647d0b1cd79c2ad90e8e8f8a2targetblank5bfe86ba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/5bfe86b009b4afd647d0b1cd79c2ad90e8e8f8a2" target="_blank">5bfe86b</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree23a9e9f163170d34935448aa8e578f3cec9cb3c3targetblank23a9e9fa"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/23a9e9f163170d34935448aa8e578f3cec9cb3c3" target="_blank">23a9e9f</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree5bfe86b009b4afd647d0b1cd79c2ad90e8e8f8a2targetblank5bfe86ba" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree23a9e9f163170d34935448aa8e578f3cec9cb3c3targetblank23a9e9fa" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/5bfe86b009b4afd647d0b1cd79c2ad90e8e8f8a2" target="_blank">5bfe86b</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/23a9e9f163170d34935448aa8e578f3cec9cb3c3" target="_blank">23a9e9f</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -406,13 +406,54 @@ Ignored files:
     Ignored:    R/.Rhistory
     Ignored:    _targets/meta/process
     Ignored:    _targets/meta/progress
+    Ignored:    _targets/scratch/
     Ignored:    renv/library/
     Ignored:    renv/local/
     Ignored:    renv/staging/
 
+Untracked files:
+    Untracked:  _targets/objects/codelist_lymphoma
+    Untracked:  _targets/objects/eventdata_lymphoma_9f1fa636
+    Untracked:  _targets/objects/parquet_lymphoma
+    Untracked:  _targets/objects/source_files_lymphoma
+    Untracked:  codelists/ICD-10/lymphoma/
+    Untracked:  eventdata/eventdata_lymphoma.parquet
+
 Unstaged changes:
+    Modified:   R/make_dummy_data.R
     Modified:   _targets.R
     Modified:   _targets/meta/meta
+    Modified:   _targets/objects/cohort_eczema
+    Modified:   _targets/objects/combined_eventdata
+    Modified:   _targets/objects/main_cohort
+    Modified:   _targets/objects/results_regression_562bbcac
+    Modified:   _targets/objects/results_regression_6367df3e
+    Modified:   _targets/objects/results_regression_7014447c
+    Modified:   _targets/objects/results_regression_730f5ee6
+    Modified:   _targets/objects/results_regression_ad5a7d7c
+    Modified:   _targets/objects/results_regression_bc93842c
+    Modified:   _targets/objects/results_regression_c5a29cd5
+    Modified:   _targets/objects/results_regression_d3000f5d
+    Modified:   _targets/objects/results_regression_e20e5e5c
+    Modified:   codelists/.DS_Store
+    Modified:   codelists/ICD-10/.DS_Store
+    Modified:   dummy_data/alc.csv
+    Modified:   dummy_data/antabuse.csv
+    Modified:   dummy_data/asthma.csv
+    Modified:   dummy_data/bisphosphonate.csv
+    Modified:   dummy_data/calcium_and_vit_d.csv
+    Modified:   dummy_data/copd.csv
+    Modified:   dummy_data/dummy_extract_clinical.csv
+    Modified:   dummy_data/dummy_extract_therapy.csv
+    Modified:   dummy_data/dummy_main_cohort.csv
+    Modified:   dummy_data/dummy_prescriptions_ped.csv
+    Modified:   dummy_data/dummy_severity.csv
+    Modified:   dummy_data/fract_all.csv
+    Modified:   dummy_data/fract_hip.csv
+    Modified:   dummy_data/fract_pelvis.csv
+    Modified:   dummy_data/fract_spine.csv
+    Modified:   dummy_data/fract_wrist.csv
+    Modified:   dummy_data/rheumatoid_arthritis.csv
 
 </code></pre>
 <p>
@@ -451,6 +492,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/julianmatthewman/Eczema_outcomes/23a9e9f163170d34935448aa8e578f3cec9cb3c3/docs/results.html" target="_blank">23a9e9f</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2021-12-04
+</td>
+<td>
+got workflowr to work
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -496,26 +554,26 @@ made wflow results
 <pre><code>Warning: package &#39;targets&#39; was built under R version 4.0.2</code></pre>
 <pre class="r"><code>tar_read(results_regression)</code></pre>
 <pre><code># A tibble: 18 × 10
-   term    estimate std.error statistic  p.value conf.low conf.high exposure
-   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;   
- 1 eczema     4.17    0.0111    129.    0           4.08       4.27 eczema  
- 2 eczema     4.17    0.0111    129.    0           4.08       4.27 eczema  
- 3 sex        1.04    0.00972     3.85  0.000117    1.02       1.06 eczema  
- 4 eczema     4.17    0.0111    129.    0           4.08       4.26 eczema  
- 5 sex        1.04    0.00972     3.84  0.000123    1.02       1.06 eczema  
- 6 bmi_cat    0.990   0.00618    -1.66  0.0965      0.978      1.00 eczema  
- 7 eczema     2.86    0.0105    100.    0           2.81       2.92 eczema  
- 8 eczema     2.86    0.0105    100.    0           2.81       2.92 eczema  
- 9 sex        1.03    0.00826     3.28  0.00104     1.01       1.04 eczema  
-10 eczema     2.86    0.0105    100.    0           2.81       2.92 eczema  
-11 sex        1.03    0.00827     3.27  0.00107     1.01       1.04 eczema  
-12 bmi_cat    0.996   0.00525    -0.829 0.407       0.985      1.01 eczema  
-13 eczema     1.77    0.00998    57.2   0           1.73       1.80 eczema  
-14 eczema     1.77    0.00998    57.2   0           1.73       1.80 eczema  
-15 sex        1.01    0.00679     1.29  0.198       0.995      1.02 eczema  
-16 eczema     1.77    0.00998    57.2   0           1.74       1.80 eczema  
-17 sex        1.01    0.00679     1.31  0.189       0.996      1.02 eczema  
-18 bmi_cat    1.02    0.00430     3.48  0.000496    1.01       1.02 eczema  
+   term    estimate std.error statistic p.value conf.low conf.high exposure
+   &lt;chr&gt;      &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;   
+ 1 eczema     4.07    0.0107    132.    0          3.99       4.16 eczema  
+ 2 eczema     4.07    0.0107    132.    0          3.99       4.16 eczema  
+ 3 sex        1.02    0.00927     2.07  0.0385     1.00       1.04 eczema  
+ 4 eczema     4.07    0.0107    132.    0          3.99       4.16 eczema  
+ 5 sex        1.02    0.00927     2.07  0.0380     1.00       1.04 eczema  
+ 6 bmi_cat    0.996   0.00586    -0.700 0.484      0.985      1.01 eczema  
+ 7 eczema     2.81    0.0101    102.    0          2.75       2.86 eczema  
+ 8 eczema     2.81    0.0101    102.    0          2.75       2.86 eczema  
+ 9 sex        1.02    0.00787     2.34  0.0192     1.00       1.03 eczema  
+10 eczema     2.81    0.0101    102.    0          2.75       2.86 eczema  
+11 sex        1.02    0.00787     2.35  0.0190     1.00       1.03 eczema  
+12 bmi_cat    0.995   0.00497    -0.932 0.351      0.986      1.01 eczema  
+13 eczema     1.62    0.00959    50.3   0          1.59       1.65 eczema  
+14 eczema     1.62    0.00959    50.3   0          1.59       1.65 eczema  
+15 sex        1.02    0.00629     2.68  0.00740    1.00       1.03 eczema  
+16 eczema     1.62    0.00959    50.3   0          1.59       1.65 eczema  
+17 sex        1.02    0.00629     2.68  0.00745    1.00       1.03 eczema  
+18 bmi_cat    1.01    0.00397     1.48  0.139      0.998      1.01 eczema  
 # … with 2 more variables: outcome &lt;chr&gt;, model &lt;chr&gt;</code></pre>
 <br>
 <p>

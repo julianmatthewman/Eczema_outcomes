@@ -53,6 +53,7 @@ eventdata <- tar_map(
             "eczema", "codelists/ICD-10/eczema/codelist.csv", "extract_clinical", "V1",
             "asthma", "codelists/ICD-10/asthma/codelist.csv", "extract_clinical", "V1",
             "fractures", "codelists/ICD-10/fractures/codelist.csv", "extract_clinical", "V1",
+            "lymphoma", "codelists/ICD-10/lymphoma/codelist.csv", "extract_clinical", "V1",
             "prednisolone", "codelists/SNOMED/prednisolone/codelist.csv", "extract_therapy", "SNOMED Code",
             # To add a new entry, specify the name the variable should have, the path to the codelist, the file to be searched in (as a search pattern) and the column to be searched in
         ),
@@ -81,7 +82,8 @@ analysor <- list(
 	    outcome, 
 	    c("asthma",
 	      "fractures",
-	      "prednisolone")
+	      "prednisolone",
+	      "lymphoma")
 	),
 	
 	# Specify exposures
@@ -142,10 +144,10 @@ analysor <- list(
 
 	# Report investigating how to read the raw entity data
 	tar_target(
-	    results,
+	    results_fractures,
 	    command = {
 	        # Scan for targets of tar_read() and tar_load()
-	        !!tar_knitr_deps_expr(here("analysis", "results.Rmd"))
+	        !!tar_knitr_deps_expr(here("analysis", "results_fractures.Rmd"))
 	        # Explicitly mention any functions used from R/functions.R
 	        # list(
 	        #     raw_entity_data_read
@@ -153,12 +155,34 @@ analysor <- list(
 	        
 	        # Build the report
 	        workflowr::wflow_build(
-	            here("analysis", "results.Rmd")
+	            here("analysis", "results_fractures.Rmd")
 	        )
 	        
 	        # Track the input Rmd file (and not the rendered HTML file).
 	        # Make the path relative to keep the project portable.
-	        fs::path_rel(here("analysis", "results.Rmd"))
+	        fs::path_rel(here("analysis", "results_fractures.Rmd"))
+	    },
+	    # Track the files returned by the command
+	    format = "file"
+	),
+	tar_target(
+	    results_lymphoma,
+	    command = {
+	        # Scan for targets of tar_read() and tar_load()
+	        !!tar_knitr_deps_expr(here("analysis", "results_lymphoma.Rmd"))
+	        # Explicitly mention any functions used from R/functions.R
+	        # list(
+	        #     raw_entity_data_read
+	        # )
+	        
+	        # Build the report
+	        workflowr::wflow_build(
+	            here("analysis", "results_lymphoma.Rmd")
+	        )
+	        
+	        # Track the input Rmd file (and not the rendered HTML file).
+	        # Make the path relative to keep the project portable.
+	        fs::path_rel(here("analysis", "results_lymphoma.Rmd"))
 	    },
 	    # Track the files returned by the command
 	    format = "file"

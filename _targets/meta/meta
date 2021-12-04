@@ -1,7 +1,6 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
 path_codelist_fractures|stem|5319eebd377241bb|cb1c357938e5226c|ef46db3751d8e999|-317369835|codelists/ICD-10/fractures/codelist.csv|t18964.9205555556s|f17a4e1c88d055bf|4330294|file|vector|||4.046|package forcats was built under R version 4.0.2|
 path_codelist_eczema|stem|a35464c78709553b|c907c436774dc06f|ef46db3751d8e999|183166154|codelists/ICD-10/eczema/codelist.csv|t18964.918912037s|65459a516dc6a82a|720|file|vector|||0||
-path_main_cohort|stem|b5f583d60addd7b1|76ec5af83b0d8e95|ef46db3751d8e999|-1814823287|dummy_data/dummy_main_cohort.csv|t18965.0000638283s|23685921aa7f4955|775663|file|vector|||0.001||
 path_codelist_asthma|stem|17a98d0f7a9ba14d|37db3696cd6d53d2|ef46db3751d8e999|1462129249|codelists/ICD-10/asthma/codelist.csv|t18964.9208796296s|16378bc13a1c12d8|5852|file|vector|||0||
 source_files_fractures|stem|e044f544b651513f|43e6d0062e988ae9|c871b12bf9298578|-1670821562||t18965.0045925963s|0b52c5847220add9|82|rds|vector||source_files_fractures_272771b3|0.001||
 source_files_asthma|stem|e044f544b651513f|43e6d0062e988ae9|c871b12bf9298578|128916742||t18965.0045927231s|0b52c5847220add9|82|rds|vector||source_files_asthma_272771b3|0.001||
@@ -10,7 +9,6 @@ source_files_eczema|stem|e044f544b651513f|43e6d0062e988ae9|c871b12bf9298578|-209
 source_files_prednisolone|stem|7b13927e38f75321|1e2ff6b6b105f54f|c871b12bf9298578|165829016||t18965.0045929908s|e655bbbdcbba1d63|81|rds|vector||source_files_prednisolone_e93a954d|0.001||
 codelist_fractures|stem|9cf4ad6a38a7a1cc|8914826c50736902|0551254630389bb9|228842496||t18965.0045936294s|10aebf7f8a93c594|4690|rds|vector|||0.04||
 codelist_eczema|stem|db7a2ae99e4752e4|ae27002434bd34e7|ba9837fe1b25c2d4|110091376||t18965.0045937508s|8a2d295a6f6be5b7|61|rds|vector|||0.003||
-main_cohort|stem|c969171960334232|c541cab5b1caf986|096717eec67fedcf|1462933600||t18965.0052350632s|ec1771a5d112d644|252041|rds|vector|||4.286|package forcats was built under R version 4.0.2|
 codelist_asthma|stem|a900b3a6c8217673|7347e61d2f94d7d7|c851e47ada8af3aa|1478138477||t18965.005235216s|241bf920421d9078|105|rds|vector|||0.004||
 codelist_prednisolone|stem|9bade1386e1c4e15|cabf6a46b3c253d8|faff07d2e7642bd9|1733757928||t18965.0052353555s|2ef9c85078f8cb51|4231|rds|vector|||0.005||
 eventdata_fractures_f9f6c350|branch|964b31212c0332a0|20b9eedd221850a8|df113718058475c3|-1340973422||t18965.0052367034s|41bc9045c3acfd2b|160635|rds|vector|eventdata_fractures||0.028||
@@ -21,8 +19,6 @@ eventdata_asthma_efd925d4|branch|b43efbc3325e5785|190a188a44f6126c|f4be6e58f4c64
 eventdata_asthma|pattern|a4f94325055cb9d4|190a188a44f6126c||-1160281940||||74084|rds|vector||eventdata_asthma_efd925d4|0.019||
 eventdata_prednisolone_d7a4985a|branch|1999f2f7dc318f70|abd5764e4f1cd552|3cd7817df5447afe|485118061||t18965.0052396589s|3dba4e7fccee71fa|292119|rds|vector|eventdata_prednisolone||0.047||
 eventdata_prednisolone|pattern|86468dd48f75dac6|abd5764e4f1cd552||948359020||||292119|rds|vector||eventdata_prednisolone_d7a4985a|0.047||
-combined_eventdata|stem|6f8a52252a0603ae|6005a743de835e19|7644a405153f8f5c|70965202||t18965.0052422376s|b031f4546658cf3e|541635|rds|vector|||0.001||
-cohort_eczema|stem|7791a712ec42bbeb|fc395570b54057ef|af0654524afb88b3|1966631942||t18965.4029884294s|6d840b9879403dea|904562|rds|vector|||7.745|package forcats was built under R version 4.0.2|
 model|stem|3c7de6a5e9742921|bf28d10c55c9a1f7|a3dad144c40657ed|1816327236||t18965.4064202607s|c1aa9ca10fc19154|116|rds|vector||model_f8a21c04*model_a313faeb*model_046b40c6|3.942|package forcats was built under R version 4.0.2|
 analysis|stem|47bcfeb5c6e178f6|78f727c8f2a5a325|179c64010a84ca6a|744237335||t18965.406420708s|083ed7cd5fdca87c|132|rds|vector||analysis_df536aad*analysis_b30be4ad*analysis_df3799ed*analysis_721567f4*analysis_fb68ec15*analysis_4005414a|0.001||
 cohort_steroids_2ef19f24|branch||1d4ec68ac1041622|913c1147440790b6|1723264014||t18965.4064265583s||0|rds|list|cohort_steroids||0.242||no applicable method for group_by applied to an object of class cdouble, numeric
@@ -40,18 +36,27 @@ results_regression_5411649e|branch|c2d6a7ee09bfba92|6338855a9137b70a|6f9fae759d4
 results_regression_8d128f4a|branch|946176be16ce0f06|6338855a9137b70a|25e3ffdb4a1ef958|-1801056893||t18965.4362833382s|9ea571d1cd313787|411|rds|vector|results_regression||0.67||
 results_regression_5718e24c|branch|cecaa2319fd3cb54|6338855a9137b70a|57406d7395db21a7|1233273759||t18965.436293736s|45e216bbd6ea13c4|415|rds|vector|results_regression||0.888||
 exposure|stem|c4efd3d597903ebe|8b04fff2abb93a85|a3dad144c40657ed|-1756888678||t18965.4374735353s|9064907978062c20|56|rds|vector||exposure_412dd7c4|3.95|package forcats was built under R version 4.0.2|
-results_regression_6367df3e|branch|05bddb04edfc2309|c4094962633b8677|cb7fe4e661b218d7|-265487455||t18965.4374895181s|73a5f5604ca1ab33|288|rds|vector|results_regression||1.192||
-results_regression_d3000f5d|branch|ac8ec99a35a96cd0|c4094962633b8677|169a6ba633a24886|-1186069644||t18965.4374993465s|e334c4b74a456131|365|rds|vector|results_regression||0.839||
-results_regression_e20e5e5c|branch|1fbf8e0c154220b8|c4094962633b8677|35533072dfd5567e|-1222792179||t18965.4375093826s|cc5b6dbe9d597cc2|424|rds|vector|results_regression||0.857||
-results_regression_7014447c|branch|c0c7616da2a25739|c4094962633b8677|1e7ba5c77e25e437|2136277902||t18965.4375160002s|eadb9afd7ddf0e7f|293|rds|vector|results_regression||0.562||
-results_regression_c5a29cd5|branch|5b5500a4931bedb8|c4094962633b8677|d0395f0c5d8c1b61|-1412330768||t18965.4375260586s|30ed5b6f0c29cb62|367|rds|vector|results_regression||0.857||
-results_regression_ad5a7d7c|branch|fe50720f891642ae|c4094962633b8677|f53fdbe6cfceaf61|2039331642||t18965.4375373219s|62b6200329b47a48|428|rds|vector|results_regression||0.963||
-outcome|stem|e54e0ec5df312e93|bc015252bf47c2c8|a3dad144c40657ed|2021572777||t18965.4504460558s|6281f79619f6778a|80|rds|vector||outcome_b1e9b63b*outcome_aa62646c*outcome_1560e5ae|4.063|package forcats was built under R version 4.0.2|
-results_regression_bc93842c|branch|3d003cfc90f85cf1|c4094962633b8677|829678f3c42fe151|-1836958358||t18965.4504610321s|11016194afa2c5c5|297|rds|vector|results_regression||1.024||
-results_regression_562bbcac|branch|ed45dd62765729f3|c4094962633b8677|c51d93c7e1681034|2091984690||t18965.4504709045s|4e0d852cb5b9829e|373|rds|vector|results_regression||0.842||
-results_regression_730f5ee6|branch|89523bdfb089081f|c4094962633b8677|f5fc4b4067b58f1f|551511623||t18965.4504811302s|81a4874a414576b3|433|rds|vector|results_regression||0.873||
-results_regression|pattern|6aef5934ed3175ef|c4094962633b8677||2104831953||||1103|rds|vector||results_regression_6367df3e*results_regression_d3000f5d*results_regression_e20e5e5c*results_regression_7014447c*results_regression_c5a29cd5*results_regression_ad5a7d7c*results_regression_bc93842c*results_regression_562bbcac*results_regression_730f5ee6|2.739||
 m_01_1_read_raw_entity_data|stem|92723f2b07948482|ee2886d8c51a6982|3e92d468e3f2ed3f|-665011933|analysis/results.Rmd|t18965.4490287039s|11684eb95dbf8c0d|189|file|vector|||6.83|package forcats was built under R version 4.0.2|
+path_codelist_lymphoma|stem|9e810bda89df32e4|6adbd3096ebfd70c|ef46db3751d8e999|2003746166|codelists/ICD-10/lymphoma/codelist.csv|t18965.469537037s|05dbd797afecc7ea|61364|file|vector|||3.949|package forcats was built under R version 4.0.2|
+source_files_lymphoma|stem|e044f544b651513f|43e6d0062e988ae9|c871b12bf9298578|257623781||t18965.4719098721s|0b52c5847220add9|82|rds|vector||source_files_lymphoma_272771b3|0.001||
+path_main_cohort|stem|7addf6a80c7a7417|76ec5af83b0d8e95|ef46db3751d8e999|-1814823287|dummy_data/dummy_main_cohort.csv|t18965.4717240144s|b04ea4890bc911ef|775794|file|vector|||0.001||
+codelist_lymphoma|stem|92633621fed0193e|99fc1143ddc926b9|5193869a26b0ea70|1068556700||t18965.4719105135s|3e0fddb8c2da2da5|154|rds|vector|||0.004||
+main_cohort|stem|55a8373c708a7bfb|c541cab5b1caf986|05d8b6c9fae84c11|1462933600||t18965.4719149854s|f720fe477bee783f|252141|rds|vector|||0.301||
+eventdata_lymphoma_9f1fa636|branch|a96198a9849ecb54|2c27d40ddda001d6|f88ab6b9ef4cc9b4|-340961426||t18965.4719159881s|199682909f9daf59|101975|rds|vector|eventdata_lymphoma||0.026||
+eventdata_lymphoma|pattern|a9a1fcc32a599079|2c27d40ddda001d6||-1858965287||||101975|rds|vector||eventdata_lymphoma_9f1fa636|0.026||
+parquet_lymphoma|stem|fe950f0980bb4061|8059d014c6b9df55|de7f8611aa3fdb78|-347099411||t18965.4719172301s|cc7e14d0e68bebff|142139|parquet|vector|||0.045||
+combined_eventdata|stem|e56e768f54659a77|72b2648447e46918|f98d82ae6e47a25c|70965202||t18965.4719208639s|a1c1a7840cce50c4|644856|rds|vector|||0.001||
+cohort_eczema|stem|3d7ed23dd85595eb|fc395570b54057ef|bf482b39ffece850|1966631942||t18965.4719660894s|ce632f68b14b4192|997687|rds|vector|||3.46||
+results_regression_6367df3e|branch|f1711cc67d8cae71|c4094962633b8677|9c91a577649b608f|-265487455||t18965.4719772757s|815c38d038fbe0c4|289|rds|vector|results_regression||0.934||
+results_regression_d3000f5d|branch|e8e8b72c0579f0ae|c4094962633b8677|fa16bbd5c20dba9f|-1186069644||t18965.4719888868s|355e02d86e0a1d2e|366|rds|vector|results_regression||0.992||
+results_regression_e20e5e5c|branch|62e0ad89356490a1|c4094962633b8677|a0c555ac2cbae75f|-1222792179||t18965.4719989963s|49cc741909f41886|426|rds|vector|results_regression||0.863||
+results_regression_7014447c|branch|56ee66035669ae08|c4094962633b8677|34d0d5e8cb848ddb|2136277902||t18965.4720093727s|72edd60c3d768dd3|291|rds|vector|results_regression||0.886||
+results_regression_c5a29cd5|branch|ab27584189dd3cf0|c4094962633b8677|5a732eceaf8a4cde|-1412330768||t18965.4720182286s|355e02d86e0a1d2e|366|rds|vector|results_regression||0.755||
+results_regression_ad5a7d7c|branch|2abc0725e95ccc0b|c4094962633b8677|caf33c2ce953815d|2039331642||t18965.4720307982s|d66a5224e01e4f0c|425|rds|vector|results_regression||1.076||
+results_regression_bc93842c|branch|f46c3f260a254494|c4094962633b8677|79805d61293cccc6|-1836958358||t18965.4720385859s|11016194afa2c5c5|297|rds|vector|results_regression||0.662||
+results_regression_562bbcac|branch|b84fa98f0b25d3ae|c4094962633b8677|229d03c495c4561d|2091984690||t18965.4720474207s|4dce41727c3315e3|372|rds|vector|results_regression||0.753||
+results_regression_730f5ee6|branch|8eeb07ccad452604|c4094962633b8677|8cc8f1919246bf80|551511623||t18965.4720599097s|81a4874a414576b3|433|rds|vector|results_regression||1.068||
+results|stem|92723f2b07948482|ee2886d8c51a6982|ffa8a9ddffc803c2|1767768831|analysis/results.Rmd|t18965.4490287039s|11684eb95dbf8c0d|189|file|vector|||3.362||
 analysis_baseline_characteristics|function|c0895af6b1037fd2||||||||||||||
 create_eventdata|function|96c3898102302671||||||||||||||
 report_forest_plot_fp|function|5bee55b2170c2e0e||||||||||||||
@@ -63,11 +68,17 @@ source_path|object|68bcbe68844803c2||||||||||||||
 create_prescriptions_risk_threshold|function|f8762801bd79c487||||||||||||||
 report_exposed_counts|function|88b1ce59853ef870||||||||||||||
 report_participant_flow|function|b12ea8c4f1b3997c||||||||||||||
-eventdata|object|175fffc9d6bcb6df||||||||||||||
+eventdata|object|e4277bc6dc383033||||||||||||||
 create_prescriptions_ped|function|36a6869dfdf372ef||||||||||||||
 create_fractures_all|function|d1389f05fb6efd64||||||||||||||
-analysor|object|dca21031e1b70fcf||||||||||||||
-make_dummy_data|function|b8331ce240af5882||||||||||||||
+analysor|object|eebbd02842d6f67a||||||||||||||
+make_dummy_data|function|6907ede2c42af941||||||||||||||
 analysis_interaction|function|0154c0ccf438d682||||||||||||||
 analysis_regression|function|e860fe5419a7f486||||||||||||||
-results|stem|92723f2b07948482|ee2886d8c51a6982|3e92d468e3f2ed3f|1767768831|analysis/results.Rmd|t18965.4490287039s|11684eb95dbf8c0d|189|file|vector|||6.624|package forcats was built under R version 4.0.2|
+outcome|stem|b4c8fcc57952bbb6|ec6ca0e84d201ac2|a3dad144c40657ed|2021572777||t18965.4805643283s|17e1813002340629|93|rds|vector||outcome_b1e9b63b*outcome_aa62646c*outcome_1560e5ae*outcome_c1ed9409|3.926|package forcats was built under R version 4.0.2|
+results_regression_2a43f702|branch|78f4ae37d76a10a6|c4094962633b8677|ddd6a7b6dcb5c399|1314171624||t18965.4805830966s|72edd60c3d768dd3|291|rds|vector|results_regression||1.338||
+results_regression_9471e6ec|branch|b58012e1cb70e85e|c4094962633b8677|4f80acbfd850336b|-894610953||t18965.4805945488s|494b560fddd003d2|368|rds|vector|results_regression||0.979||
+results_regression_a5950934|branch|29fe85d17b0f2e7e|c4094962633b8677|79febba654add90e|-732766259||t18965.4806063989s|62b6200329b47a48|428|rds|vector|results_regression||1.014||
+results_regression|pattern|5ddb91d35e60cf75|c4094962633b8677||2104831953||||1087|rds|vector||results_regression_6367df3e*results_regression_d3000f5d*results_regression_e20e5e5c*results_regression_7014447c*results_regression_c5a29cd5*results_regression_ad5a7d7c*results_regression_bc93842c*results_regression_562bbcac*results_regression_730f5ee6*results_regression_2a43f702*results_regression_9471e6ec*results_regression_a5950934|3.331||
+results_lymphoma|stem|7597e077e99fdf73|61aa367c74aeed55|213c30cfbe056996|183924319|analysis/results_lymphoma.Rmd|t18965.4787668167s|1018763f8eb390c8|254|file|vector|||4.243||
+results_fractures|stem|a2bde8197e896c0c|33782884dbea9125|213c30cfbe056996|1072034032|analysis/results_fractures.Rmd|t18965.4787535688s|f61d5eec182b6cd2|255|file|vector|||4.093||
