@@ -76,25 +76,15 @@ analysor <- list(
 	
 	# Specify outcomes
 	tar_target(
-		outcome, 
-		head(n=99, #TEMPORARILY TURN OFF OUTCOMES TO SPEED UP RUNTIME
-				 c("bisphosphonate",
-				 	"fract_composite", 
-				 	"fract_any",
-				 	"calcium_and_vit_d"
-				 ))
+	    outcome, 
+	    c("asthma",
+	      "fractures")
 	),
 	
 	# Specify exposures
 	tar_target(
-		exposure,
-		head(n=99, #TEMPORARILY TURN OFF OUTCOMES TO SPEED UP RUNTIME
-				 c("pattern",
-				 	"pattern_rt_gap",
-				 	"pattern_lagged",
-				 	"pattern_itt",
-				 	"cumdose"
-				 ))
+	    exposure,
+	    c("eczema")
 	),
 	
 	
@@ -113,14 +103,11 @@ analysor <- list(
 	
 	# Specify models for regression
 	tar_target(
-		model, 
-		head(n=99, #TEMPORARILY RUN ONLY SELECTED MODELS TO SPEED UP RUNTIME
-		c("crude" = "",
-			"adjusted_comorb" = "+ agegroup + sex + carstairs + asthma + copd + rheumatoid_arthritis + severity",
-			"adjusted_age_sex_carstairs" = "+ agegroup + sex + carstairs",
-			"adjusted_comorb_lifestyle" = "+ agegroup + sex + carstairs + asthma + copd + rheumatoid_arthritis + severity + smokstatus + bmi_cat + alc",
-			"adjusted_comorb_cumdose" = "+ agegroup + sex + carstairs + asthma + copd + rheumatoid_arthritis + severity + cumdose_cont"
-			))
+	    model, 
+	    c("crude" = "",
+	      "adjusted_sex" = "+ sex",
+	      "adjusted_sex_bmi" = "+ sex + bmi_cat"
+	    )
 	),
 	
 
@@ -137,20 +124,14 @@ analysor <- list(
 		cohort_eczema, 
 		create_cohort_eczema(main_cohort, combined_eventdata),
 	),
-	tar_target(
-		cohort_steroids,
-		create_cohort_steroids(cohort_eczema, outcome, analysis),
-		pattern = cross(outcome, analysis),
-		iteration = "list"
-		), 
 	
 	
 	
 	# Analysis -------------------------------------------------------------------
 	tar_target(
 		results_regression, 
-		analysis_regression(cohort_steroids, model, exposure),
-		pattern = cross(cohort_steroids, model, exposure)
+		analysis_regression(cohort_eczema, exposure, outcome, model),
+		pattern = cross(exposure, outcome, model)
 		)
 )
 
