@@ -1,0 +1,43 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+path_codelist_fractures|stem|5319eebd377241bb|cb1c357938e5226c|ef46db3751d8e999|-317369835|codelists/ICD-10/fractures/codelist.csv|t18964.9205555556s|f17a4e1c88d055bf|4330294|file|vector|||4.046|package forcats was built under R version 4.0.2|
+path_codelist_eczema|stem|a35464c78709553b|c907c436774dc06f|ef46db3751d8e999|183166154|codelists/ICD-10/eczema/codelist.csv|t18964.918912037s|65459a516dc6a82a|720|file|vector|||0||
+path_main_cohort|stem|b5f583d60addd7b1|76ec5af83b0d8e95|ef46db3751d8e999|-1814823287|dummy_data/dummy_main_cohort.csv|t18965.0000638283s|23685921aa7f4955|775663|file|vector|||0.001||
+path_codelist_asthma|stem|17a98d0f7a9ba14d|37db3696cd6d53d2|ef46db3751d8e999|1462129249|codelists/ICD-10/asthma/codelist.csv|t18964.9208796296s|16378bc13a1c12d8|5852|file|vector|||0||
+source_files_fractures|stem|e044f544b651513f|43e6d0062e988ae9|c871b12bf9298578|-1670821562||t18965.0045925963s|0b52c5847220add9|82|rds|vector||source_files_fractures_272771b3|0.001||
+source_files_asthma|stem|e044f544b651513f|43e6d0062e988ae9|c871b12bf9298578|128916742||t18965.0045927231s|0b52c5847220add9|82|rds|vector||source_files_asthma_272771b3|0.001||
+path_codelist_prednisolone|stem|3eb878251dccee8d|e4355b6ee3d71649|ef46db3751d8e999|1939856570|codelists/SNOMED/prednisolone/codelist.csv|t18964.9222685185s|c4a7f6b2cc487e20|124862|file|vector|||0.001||
+source_files_eczema|stem|e044f544b651513f|43e6d0062e988ae9|c871b12bf9298578|-2094609255||t18965.0045928986s|0b52c5847220add9|82|rds|vector||source_files_eczema_272771b3|0.001||
+source_files_prednisolone|stem|7b13927e38f75321|1e2ff6b6b105f54f|c871b12bf9298578|165829016||t18965.0045929908s|e655bbbdcbba1d63|81|rds|vector||source_files_prednisolone_e93a954d|0.001||
+codelist_fractures|stem|9cf4ad6a38a7a1cc|8914826c50736902|0551254630389bb9|228842496||t18965.0045936294s|10aebf7f8a93c594|4690|rds|vector|||0.04||
+codelist_eczema|stem|db7a2ae99e4752e4|ae27002434bd34e7|ba9837fe1b25c2d4|110091376||t18965.0045937508s|8a2d295a6f6be5b7|61|rds|vector|||0.003||
+main_cohort|stem|c969171960334232|c541cab5b1caf986|096717eec67fedcf|1462933600||t18965.0052350632s|ec1771a5d112d644|252041|rds|vector|||4.286|package forcats was built under R version 4.0.2|
+codelist_asthma|stem|a900b3a6c8217673|7347e61d2f94d7d7|c851e47ada8af3aa|1478138477||t18965.005235216s|241bf920421d9078|105|rds|vector|||0.004||
+codelist_prednisolone|stem|9bade1386e1c4e15|cabf6a46b3c253d8|faff07d2e7642bd9|1733757928||t18965.0052353555s|2ef9c85078f8cb51|4231|rds|vector|||0.005||
+eventdata_fractures_f9f6c350|branch|964b31212c0332a0|20b9eedd221850a8|df113718058475c3|-1340973422||t18965.0052367034s|41bc9045c3acfd2b|160635|rds|vector|eventdata_fractures||0.028||
+eventdata_fractures|pattern|26194cbe7f23f3d9|20b9eedd221850a8||-1413910677||||160635|rds|vector||eventdata_fractures_f9f6c350|0.028||
+eventdata_eczema_42f6ff7b|branch|700549e6ea60ecf3|f62340002d875c8b|edf9c03714fd616d|58983710||t18965.0052371852s|231b4f37f647e8ce|17794|rds|vector|eventdata_eczema||0.02||
+eventdata_eczema|pattern|632cf3d79f101f02|f62340002d875c8b||-1164011271||||17794|rds|vector||eventdata_eczema_42f6ff7b|0.02||
+eventdata_asthma_efd925d4|branch|b43efbc3325e5785|190a188a44f6126c|f4be6e58f4c646b4|525004426||t18965.005237877s|a54fe587a07b3fc3|74084|rds|vector|eventdata_asthma||0.019||
+eventdata_asthma|pattern|a4f94325055cb9d4|190a188a44f6126c||-1160281940||||74084|rds|vector||eventdata_asthma_efd925d4|0.019||
+eventdata_prednisolone_d7a4985a|branch|1999f2f7dc318f70|abd5764e4f1cd552|3cd7817df5447afe|485118061||t18965.0052396589s|3dba4e7fccee71fa|292119|rds|vector|eventdata_prednisolone||0.047||
+eventdata_prednisolone|pattern|86468dd48f75dac6|abd5764e4f1cd552||948359020||||292119|rds|vector||eventdata_prednisolone_d7a4985a|0.047||
+combined_eventdata|stem|6f8a52252a0603ae|6005a743de835e19|7644a405153f8f5c|70965202||t18965.0052422376s|b031f4546658cf3e|541635|rds|vector|||0.001||
+analysis_baseline_characteristics|function|c0895af6b1037fd2||||||||||||||
+create_eventdata|function|96c3898102302671||||||||||||||
+report_forest_plot_fp|function|5bee55b2170c2e0e||||||||||||||
+create_cohort_steroids|function|c6a476d9c70dbf6c||||||||||||||
+analysis_rates|function|bb6847a055ee5f06||||||||||||||
+create_cohort_eczema|function|fb68f7265f924d95||||||||||||||
+create_prescriptions_expanded|function|45fa4d05c8883059||||||||||||||
+source_path|object|68bcbe68844803c2||||||||||||||
+create_prescriptions_risk_threshold|function|f8762801bd79c487||||||||||||||
+report_exposed_counts|function|88b1ce59853ef870||||||||||||||
+report_participant_flow|function|b12ea8c4f1b3997c||||||||||||||
+eventdata|object|8e87cbcbaab87002||||||||||||||
+create_prescriptions_ped|function|36a6869dfdf372ef||||||||||||||
+create_fractures_all|function|d1389f05fb6efd64||||||||||||||
+analysor|object|a4933180d601ddf3||||||||||||||
+make_dummy_data|function|b8331ce240af5882||||||||||||||
+analysis_interaction|function|0154c0ccf438d682||||||||||||||
+analysis_regression|function|ae2798bac4ec7795||||||||||||||
+cohort_eczema|stem|67445644daab5166|fc395570b54057ef|6a5a2163f3d11531|1966631942||t18965.0182777353s|3d88c23ddcc44752|918522|rds|vector|||6.683|package forcats was built under R version 4.0.2|
