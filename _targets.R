@@ -1,5 +1,6 @@
 library(targets)
 library(tarchetypes)
+library(here)
 # This _targets.R file defines the {targets} pipeline.
 # Run tar_make() to run the pipeline, tar_make(target) to run up to a defined target, and tar_read(target) to view the results.
 
@@ -13,6 +14,7 @@ sapply(list.files("R", full.names = TRUE) ,source, .GlobalEnv)
 # Set target-specific options such as packages.
 tar_option_set(
 	packages = c(
+	    "here",
 		"rio", #For reading various filetypes
 		"arrow", #For reading parquet files
 		"cli", #For producing command line interface elements such as loading bars
@@ -133,7 +135,40 @@ analysor <- list(
 		results_regression, 
 		analysis_regression(cohort_eczema, exposure, outcome, model),
 		pattern = cross(exposure, outcome, model)
-		)
+		),
+	
+
+    # Report ------------------------------------------------------------------
+
+	# Report investigating how to read the raw entity data
+	tar_target(
+	    results,
+	    command = {
+	        # Scan for targets of tar_read() and tar_load()
+	        !!tar_knitr_deps_expr(here("analysis", "results.Rmd"))
+	        # Explicitly mention any functions used from R/functions.R
+	        # list(
+	        #     raw_entity_data_read
+	        # )
+	        
+	        # Build the report
+	        workflowr::wflow_build(
+	            here("analysis", "results.Rmd")
+	        )
+	        
+	        # Track the input Rmd file (and not the rendered HTML file).
+	        # Make the path relative to keep the project portable.
+	        fs::path_rel(here("analysis", "results.Rmd"))
+	    },
+	    # Track the files returned by the command
+	    format = "file"
+	)
+	
+	
+	
+	
+	
+	
 )
 
 list(eventdata, combined, analysor)
