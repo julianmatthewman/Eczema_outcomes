@@ -43,7 +43,7 @@ tar_option_set(
 
 
 
-# Extractor ---------------------------------------------------------
+# Eventdata ---------------------------------------------------------
 source_path <- "dummy_data"
 
 eventdata <- tar_map(
@@ -73,7 +73,7 @@ combined <- tar_combine(
 
 
 # List of target objects.
-analysor <- list(
+study <- list(
 	
 	# Specifications -------------------------------------------------------------
 	
@@ -195,4 +195,4 @@ analysor <- list(
 	
 )
 
-list(eventdata, combined, analysor)
+list(eventdata, combined, study)

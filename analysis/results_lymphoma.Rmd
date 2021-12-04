@@ -13,7 +13,7 @@ library(tidyverse)
 ```
 
 ```{r}
-results <- tar_read(results_regression) %>% filter(outcome=="lymphoma")
+results <- tar_read(results_regression) %>% filter(outcome=="lymphoma", term=="eczema")
 results
 ```
 

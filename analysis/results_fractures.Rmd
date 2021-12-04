@@ -13,7 +13,8 @@ library(tidyverse)
 ```
 
 ```{r}
-tar_read(results_regression) %>% filter(outcome=="fractures")
+results <- tar_read(results_regression) %>% filter(outcome=="fractures")
+results
 ```
 
 ```{r}

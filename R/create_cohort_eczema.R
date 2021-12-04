@@ -32,6 +32,9 @@ for (i in seq_along(combined_eventdata)) {
     tmerged[str_sub(names(combined_eventdata)[i],start = str_length("eventdata_x"))] <- tmerged$time_dep_cov
 }
 
-tmerged %>% select(-time_dep_cov)
+tmerged %>%
+    mutate(sex=factor(sex),
+           bmi_cat=factor(bmi_cat)) %>% 
+    select(-time_dep_cov)
 
 }
