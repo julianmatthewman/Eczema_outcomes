@@ -78,7 +78,8 @@ analysor <- list(
 	tar_target(
 	    outcome, 
 	    c("asthma",
-	      "fractures")
+	      "fractures",
+	      "prednisolone")
 	),
 	
 	# Specify exposures
