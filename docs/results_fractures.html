@@ -13,6 +13,7 @@
 
 <title>Results</title>
 
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -47,6 +48,8 @@ div.section {
   padding-top: 12px;
 }
 </style>
+
+
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -302,7 +305,7 @@ $(document).ready(function () {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-12-04
+<strong>Last updated:</strong> 2021-12-30
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
@@ -393,16 +396,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree398525c137e534c4d93e16a860519da7f05c671btargetblank398525ca"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/398525c137e534c4d93e16a860519da7f05c671b" target="_blank">398525c</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree81a2b1d478891b139ab792b3d07f722a097dd761targetblank81a2b1da"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/81a2b1d478891b139ab792b3d07f722a097dd761" target="_blank">81a2b1d</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree398525c137e534c4d93e16a860519da7f05c671btargetblank398525ca" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree81a2b1d478891b139ab792b3d07f722a097dd761targetblank81a2b1da" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/398525c137e534c4d93e16a860519da7f05c671b" target="_blank">398525c</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/81a2b1d478891b139ab792b3d07f722a097dd761" target="_blank">81a2b1d</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -411,67 +414,88 @@ Note that you need to be careful to ensure that all relevant files for the analy
 Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
-    Ignored:    R/.Rhistory
     Ignored:    _targets/meta/process
     Ignored:    _targets/meta/progress
     Ignored:    renv/library/
-    Ignored:    renv/local/
     Ignored:    renv/staging/
 
 Untracked files:
-    Untracked:  R/create_cohort_post_exclusions.R
-    Untracked:  _targets/objects/cohort_post_exclusion_535a70cd
-    Untracked:  _targets/objects/cohort_post_exclusion_63d8d0e9
-    Untracked:  _targets/objects/cohort_post_exclusion_95405a37
-    Untracked:  _targets/objects/cohort_post_exclusion_bc59f3ca
-    Untracked:  _targets/objects/cohort_post_exclusion_db01a8df
-    Untracked:  _targets/objects/exclusion
-    Untracked:  _targets/objects/exclusion_var
-    Untracked:  _targets/objects/results_regression_0209915f
-    Untracked:  _targets/objects/results_regression_0838945a
-    Untracked:  _targets/objects/results_regression_0e6829a0
-    Untracked:  _targets/objects/results_regression_1cb32fcf
-    Untracked:  _targets/objects/results_regression_2158962c
-    Untracked:  _targets/objects/results_regression_309ec63a
-    Untracked:  _targets/objects/results_regression_336512c2
-    Untracked:  _targets/objects/results_regression_3a672bcc
-    Untracked:  _targets/objects/results_regression_3c660c96
-    Untracked:  _targets/objects/results_regression_3ce753f1
-    Untracked:  _targets/objects/results_regression_43cf81f3
-    Untracked:  _targets/objects/results_regression_4556d38e
-    Untracked:  _targets/objects/results_regression_47efe48c
-    Untracked:  _targets/objects/results_regression_4ebc1dd8
-    Untracked:  _targets/objects/results_regression_51b813ff
-    Untracked:  _targets/objects/results_regression_532979d8
-    Untracked:  _targets/objects/results_regression_53dff07d
-    Untracked:  _targets/objects/results_regression_607822d6
-    Untracked:  _targets/objects/results_regression_671c2a99
-    Untracked:  _targets/objects/results_regression_6f209b1b
-    Untracked:  _targets/objects/results_regression_71d26878
-    Untracked:  _targets/objects/results_regression_7b5f3c11
-    Untracked:  _targets/objects/results_regression_880b2bca
-    Untracked:  _targets/objects/results_regression_8881a25e
-    Untracked:  _targets/objects/results_regression_8b3d4ea7
-    Untracked:  _targets/objects/results_regression_9289cbe6
-    Untracked:  _targets/objects/results_regression_93a4d16b
-    Untracked:  _targets/objects/results_regression_9c79fee1
-    Untracked:  _targets/objects/results_regression_a6197fa2
-    Untracked:  _targets/objects/results_regression_ab276110
-    Untracked:  _targets/objects/results_regression_ae08f804
-    Untracked:  _targets/objects/results_regression_b5c20bc4
-    Untracked:  _targets/objects/results_regression_b71223e6
-    Untracked:  _targets/objects/results_regression_b9819763
-    Untracked:  _targets/objects/results_regression_d1513cb3
-    Untracked:  _targets/objects/results_regression_e623132a
+    Untracked:  R/report_DAGs.R
+    Untracked:  _targets/objects/DAGs
+    Untracked:  _targets/objects/combined_codelists
+    Untracked:  analysis/DAGs.Rmd
+    Untracked:  analysis/Variables.Rmd
 
 Unstaged changes:
-    Modified:   .DS_Store
-    Modified:   R/analysis_regression.R
+    Modified:   Eczema_outcomes.Rproj
     Modified:   _targets.R
+    Modified:   _targets/meta/.gitignore
     Modified:   _targets/meta/meta
+    Modified:   _targets/objects/codelist_asthma
+    Modified:   _targets/objects/codelist_eczema
+    Modified:   _targets/objects/codelist_fractures
+    Modified:   _targets/objects/codelist_lymphoma
+    Modified:   _targets/objects/codelist_prednisolone
+    Modified:   _targets/objects/cohort_eczema
+    Modified:   _targets/objects/cohort_post_exclusion_63d8d0e9
+    Modified:   _targets/objects/cohort_post_exclusion_95405a37
+    Modified:   _targets/objects/cohort_post_exclusion_bc59f3ca
+    Modified:   _targets/objects/combined_eventdata
+    Modified:   _targets/objects/eventdata_asthma_efd925d4
+    Modified:   _targets/objects/eventdata_eczema_42f6ff7b
+    Modified:   _targets/objects/eventdata_fractures_f9f6c350
+    Modified:   _targets/objects/eventdata_lymphoma_9f1fa636
+    Modified:   _targets/objects/eventdata_prednisolone_d7a4985a
+    Modified:   _targets/objects/main_cohort
+    Modified:   _targets/objects/parquet_asthma
+    Modified:   _targets/objects/parquet_eczema
+    Modified:   _targets/objects/parquet_fractures
+    Modified:   _targets/objects/parquet_lymphoma
+    Modified:   _targets/objects/parquet_prednisolone
+    Modified:   _targets/objects/results_regression_0209915f
+    Modified:   _targets/objects/results_regression_0838945a
+    Modified:   _targets/objects/results_regression_0e6829a0
+    Modified:   _targets/objects/results_regression_1cb32fcf
+    Modified:   _targets/objects/results_regression_2158962c
+    Modified:   _targets/objects/results_regression_309ec63a
+    Modified:   _targets/objects/results_regression_336512c2
+    Modified:   _targets/objects/results_regression_3a672bcc
+    Modified:   _targets/objects/results_regression_3c660c96
+    Modified:   _targets/objects/results_regression_3ce753f1
+    Modified:   _targets/objects/results_regression_43cf81f3
+    Modified:   _targets/objects/results_regression_4556d38e
+    Modified:   _targets/objects/results_regression_47efe48c
+    Modified:   _targets/objects/results_regression_4ebc1dd8
+    Modified:   _targets/objects/results_regression_51b813ff
+    Modified:   _targets/objects/results_regression_532979d8
+    Modified:   _targets/objects/results_regression_53dff07d
+    Modified:   _targets/objects/results_regression_607822d6
+    Modified:   _targets/objects/results_regression_671c2a99
+    Modified:   _targets/objects/results_regression_6f209b1b
+    Modified:   _targets/objects/results_regression_71d26878
+    Modified:   _targets/objects/results_regression_7b5f3c11
+    Modified:   _targets/objects/results_regression_880b2bca
+    Modified:   _targets/objects/results_regression_8881a25e
+    Modified:   _targets/objects/results_regression_8b3d4ea7
+    Modified:   _targets/objects/results_regression_9289cbe6
+    Modified:   _targets/objects/results_regression_93a4d16b
+    Modified:   _targets/objects/results_regression_9c79fee1
+    Modified:   _targets/objects/results_regression_a6197fa2
+    Modified:   _targets/objects/results_regression_ab276110
+    Modified:   _targets/objects/results_regression_ae08f804
+    Modified:   _targets/objects/results_regression_b5c20bc4
+    Modified:   _targets/objects/results_regression_b71223e6
+    Modified:   _targets/objects/results_regression_b9819763
+    Modified:   _targets/objects/results_regression_d1513cb3
+    Modified:   _targets/objects/results_regression_e623132a
+    Modified:   analysis/index.Rmd
     Modified:   analysis/results_fractures.Rmd
-    Modified:   analysis/results_lymphoma.Rmd
-    Modified:   codelists/.DS_Store
+    Modified:   eventdata/eventdata_asthma.parquet
+    Modified:   eventdata/eventdata_eczema.parquet
+    Modified:   eventdata/eventdata_fractures.parquet
+    Modified:   eventdata/eventdata_lymphoma.parquet
+    Modified:   eventdata/eventdata_prednisolone.parquet
+    Modified:   renv/.gitignore
 
 </code></pre>
 <p>
@@ -510,6 +534,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/d2f852de4657aa1fcd83e1db64307970f7241d84/analysis/results_fractures.Rmd" target="_blank">d2f852d</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2021-12-04
+</td>
+<td>
+added "none" as exclusion option
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/julianmatthewman/Eczema_outcomes/d2f852de4657aa1fcd83e1db64307970f7241d84/docs/results_fractures.html" target="_blank">d2f852d</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2021-12-04
+</td>
+<td>
+added "none" as exclusion option
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -602,23 +660,45 @@ added another outcome
 </div>
 </div>
 </div>
+<div id="analysis-specifications" class="section level2">
+<h2>Analysis Specifications</h2>
 <p>Specify relevant results:</p>
 <pre class="r"><code>exposures &lt;- c(&quot;eczema&quot;)
 outcomes &lt;- c(&quot;fractures&quot;)
 models &lt;- c(&quot;crude&quot;, &quot;adjusted_sex&quot;, &quot;adjusted_sex_bmi&quot;)
 exclusions &lt;- c(&quot;none&quot;, &quot;lymphoma&quot;)</code></pre>
-<p>The following results are relevant for this study:</p>
+<p>Specify relevant DAG:</p>
+<pre class="r"><code>dag &lt;- tar_read(DAGs)[[&quot;confounder_adjusted_simple&quot;]]</code></pre>
+</div>
+<div id="inputs" class="section level2 tabset">
+<h2 class="tabset">Inputs</h2>
+<div id="included" class="section level3">
+<h3>Included</h3>
+<p>The following combinations of inputs are relevant for this study:</p>
 <div id="htmlwidget-62c409170296c7de168e" style="width:100%;height:auto;" class="datatables html-widget"></div>
 <script type="application/json" data-for="htmlwidget-62c409170296c7de168e">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5","6"],["eczema","eczema","eczema","eczema","eczema","eczema"],["fractures","fractures","fractures","fractures","fractures","fractures"],["crude","adjusted_sex","adjusted_sex_bmi","crude","adjusted_sex","adjusted_sex_bmi"],["none","none","none","lymphoma","lymphoma","lymphoma"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>exposure<\/th>\n      <th>outcome<\/th>\n      <th>model<\/th>\n      <th>exclusion<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
-<p>The following results are not relevant for the selected exposures and outcomes and were dropped:</p>
+</div>
+<div id="excluded" class="section level3">
+<h3>Excluded</h3>
+<p>The following combinations of inputs are not relevant for the selected exposures and outcomes and were dropped:</p>
 <div id="htmlwidget-ead371cf12d07a0c8d8f" style="width:100%;height:auto;" class="datatables html-widget"></div>
 <script type="application/json" data-for="htmlwidget-ead371cf12d07a0c8d8f">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["eczema","eczema","eczema"],["fractures","fractures","fractures"],["crude","adjusted_sex","adjusted_sex_bmi"],["asthma","asthma","asthma"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>exposure<\/th>\n      <th>outcome<\/th>\n      <th>model<\/th>\n      <th>exclusion<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false,"columnDefs":[{"orderable":false,"targets":0}]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="dag" class="section level3">
+<h3>DAG</h3>
+<p>The following DAG was chosen as the most appropriate for these analyses</p>
+<pre class="r"><code>plot(dag)</code></pre>
+<p><img src="figure/results_fractures.Rmd/unnamed-chunk-6-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="results" class="section level2">
+<h2>Results</h2>
 <pre class="r"><code>results %&gt;% 
     ggplot(aes(x=model, y=estimate)) +
     geom_pointrange(aes(ymin=conf.low, ymax=conf.high)) +
     coord_flip() +
     geom_hline(yintercept=1, lty=2)</code></pre>
-<p><img src="figure/results_fractures.Rmd/unnamed-chunk-5-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="figure/results_fractures.Rmd/unnamed-chunk-7-1.png" width="672" style="display: block; margin: auto;" /></p>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -627,44 +707,46 @@ exclusions &lt;- c(&quot;none&quot;, &quot;lymphoma&quot;)</code></pre>
 </p>
 <div id="workflowr-sessioninfo" class="collapse">
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>R version 4.0.0 (2020-04-24)
-Platform: x86_64-apple-darwin17.0 (64-bit)
-Running under: macOS Catalina 10.15.7
+<pre><code>R version 4.1.2 (2021-11-01)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 22000)
 
 Matrix products: default
-BLAS:   /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRblas.dylib
-LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
 
 locale:
-[1] en_GB.UTF-8/en_GB.UTF-8/en_GB.UTF-8/C/en_GB.UTF-8/en_GB.UTF-8
+[1] LC_COLLATE=English_World.1252  LC_CTYPE=English_World.1252   
+[3] LC_MONETARY=English_World.1252 LC_NUMERIC=C                  
+[5] LC_TIME=English_World.1252    
 
 attached base packages:
 [1] stats     graphics  grDevices datasets  utils     methods   base     
 
 other attached packages:
- [1] DT_0.20         forcats_0.5.1   stringr_1.4.0   dplyr_1.0.7    
- [5] purrr_0.3.4     readr_2.1.1     tidyr_1.1.4     tibble_3.1.6   
- [9] ggplot2_3.3.5   tidyverse_1.3.1 targets_0.8.1  
+ [1] dagitty_0.3-1   DT_0.20         forcats_0.5.1   stringr_1.4.0  
+ [5] dplyr_1.0.7     purrr_0.3.4     readr_2.1.1     tidyr_1.1.4    
+ [9] tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.3.1 targets_0.8.1  
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.7        lubridate_1.8.0   ps_1.6.0          assertthat_0.2.1 
- [5] rprojroot_2.0.2   digest_0.6.29     utf8_1.2.2        cellranger_1.1.0 
- [9] R6_2.5.1          backports_1.4.0   reprex_2.0.1      evaluate_0.14    
-[13] highr_0.9         httr_1.4.2        pillar_1.6.4      rlang_0.4.12     
-[17] readxl_1.3.1      rstudioapi_0.13   data.table_1.14.2 whisker_0.4      
-[21] callr_3.7.0       jquerylib_0.1.4   rmarkdown_2.11    labeling_0.4.2   
-[25] htmlwidgets_1.5.4 igraph_1.2.9      munsell_0.5.0     broom_0.7.10     
-[29] compiler_4.0.0    httpuv_1.6.3      modelr_0.1.8      xfun_0.28        
-[33] pkgconfig_2.0.3   htmltools_0.5.2   tidyselect_1.1.1  workflowr_1.6.2  
-[37] codetools_0.2-18  fansi_0.5.0       crayon_1.4.2      tzdb_0.2.0       
-[41] dbplyr_2.1.1      withr_2.4.3       later_1.3.0       grid_4.0.0       
-[45] jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.1   DBI_1.1.1        
-[49] git2r_0.29.0      magrittr_2.0.1    scales_1.1.1      cli_3.1.0        
-[53] stringi_1.7.6     farver_2.1.0      renv_0.14.0       fs_1.5.1         
-[57] promises_1.2.0.1  xml2_1.3.3        ellipsis_0.3.2    generics_0.1.1   
-[61] vctrs_0.3.8       tools_4.0.0       glue_1.5.1        crosstalk_1.2.0  
-[65] hms_1.1.1         processx_3.5.2    fastmap_1.1.0     yaml_2.2.1       
-[69] colorspace_2.0-2  rvest_1.0.2       knitr_1.36        haven_2.4.3      </code></pre>
+ [1] httr_1.4.2        jsonlite_1.7.2    modelr_0.1.8      assertthat_0.2.1 
+ [5] highr_0.9         renv_0.14.0       cellranger_1.1.0  yaml_2.2.1       
+ [9] pillar_1.6.4      backports_1.4.0   glue_1.5.1        digest_0.6.29    
+[13] promises_1.2.0.1  rvest_1.0.2       colorspace_2.0-2  htmltools_0.5.2  
+[17] httpuv_1.6.3      pkgconfig_2.0.3   broom_0.7.10      haven_2.4.3      
+[21] scales_1.1.1      processx_3.5.2    whisker_0.4       later_1.3.0      
+[25] tzdb_0.2.0        git2r_0.29.0      farver_2.1.0      generics_0.1.1   
+[29] ellipsis_0.3.2    withr_2.4.3       cli_3.1.0         magrittr_2.0.1   
+[33] crayon_1.4.2      readxl_1.3.1      evaluate_0.14     ps_1.6.0         
+[37] fs_1.5.1          fansi_0.5.0       MASS_7.3-54       xml2_1.3.3       
+[41] tools_4.1.2       data.table_1.14.2 hms_1.1.1         lifecycle_1.0.1  
+[45] V8_3.6.0          munsell_0.5.0     reprex_2.0.1      callr_3.7.0      
+[49] compiler_4.1.2    jquerylib_0.1.4   rlang_0.4.12      grid_4.1.2       
+[53] rstudioapi_0.13   htmlwidgets_1.5.4 crosstalk_1.2.0   igraph_1.2.9     
+[57] labeling_0.4.2    rmarkdown_2.11    boot_1.3-28       gtable_0.3.0     
+[61] codetools_0.2-18  DBI_1.1.1         curl_4.3.2        R6_2.5.1         
+[65] lubridate_1.8.0   knitr_1.36        fastmap_1.1.0     utf8_1.2.2       
+[69] workflowr_1.6.2   rprojroot_2.0.2   stringi_1.7.6     Rcpp_1.0.7       
+[73] vctrs_0.3.8       dbplyr_2.1.1      tidyselect_1.1.1  xfun_0.28        </code></pre>
+</div>
 </div>
 
 
@@ -679,6 +761,8 @@ footer is added to webpages before the MathJax javascript. -->
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
+
+
 
 
 

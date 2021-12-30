@@ -46,7 +46,7 @@ tar_option_set(
 # Eventdata ---------------------------------------------------------
 source_path <- "dummy_data"
 
-eventdata <- tar_map(
+eventdata_map <- tar_map(
         unlist = FALSE,
         values = dplyr::tribble( # Specify the name of the variable, path to the codelist, search pattern and column to search the code in
             ~name, ~codelist_path, ~source_pattern, ~codevar,
@@ -62,13 +62,18 @@ eventdata <- tar_map(
         tar_file(path_codelist, codelist_path), # Specifies and tracks the codelist file
         tar_target(codelist, sort(import(path_codelist)[[codevar]])), # Loads the codes from the codelist file
         tar_target(eventdata, import(source_files) %>% filter(eval(sym(codevar)) %in% codelist), # Makes the eventdata
-                   pattern = map(source_files)), # Iterates over all the file paths provided
-        tar_parquet(parquet, write_parquet(eventdata, paste0("eventdata/", paste0("eventdata_", name, ".parquet")))) # Writes the file in parquet format (tar_parquet is shorthand for tar_target(format="parquet"))
+                   pattern = map(source_files)) # Iterates over all the file paths provided
+        #add if eventdata should be written to disk: tar_parquet(parquet, write_parquet(eventdata, paste0("eventdata/", paste0("eventdata_", name, ".parquet")))) # Writes the file in parquet format (tar_parquet is shorthand for tar_target(format="parquet"))
     )
 
-combined <- tar_combine(
+eventdata_combine <- tar_combine(
     combined_eventdata,
-    eventdata[[4]],
+    eventdata_map[[4]],
+    command = list(!!!.x))
+
+codelist_combine <- tar_combine(
+    combined_codelists,
+    eventdata_map[[3]],
     command = list(!!!.x))
 
 
@@ -121,6 +126,12 @@ study <- list(
 	    )
 	),
 	
+	# Specify DAGs
+	tar_target(
+	    DAGs,
+	    report_DAGs()
+	),
+	
 
     # File paths --------------------------------------------------------------
 
@@ -148,48 +159,7 @@ study <- list(
 		results_regression, 
 		analysis_regression(cohort_post_exclusion, exposure, outcome, model, exclusion),
 		pattern = cross(cohort_post_exclusion, exposure, outcome, model)
-		),
-	
-
-    # Report ------------------------------------------------------------------
-
-	# Report investigating how to read the raw entity data
-	tar_target(
-	    results_fractures,
-	    command = {
-	        workflowr::wflow_build(here("analysis", "results_fractures.Rmd"))
-	        fs::path_rel(here("analysis", "results_fractures.Rmd"))
-	    },
-	    format = "file"
-	),
-	tar_target(
-	    results_lymphoma,
-	    command = {
-	        # Scan for targets of tar_read() and tar_load()
-	        !!tar_knitr_deps_expr(here("analysis", "results_lymphoma.Rmd"))
-	        # Explicitly mention any functions used from R/functions.R
-	        # list(
-	        #     raw_entity_data_read
-	        # )
-	        
-	        # Build the report
-	        workflowr::wflow_build(
-	            here("analysis", "results_lymphoma.Rmd")
-	        )
-	        
-	        # Track the input Rmd file (and not the rendered HTML file).
-	        # Make the path relative to keep the project portable.
-	        fs::path_rel(here("analysis", "results_lymphoma.Rmd"))
-	    },
-	    # Track the files returned by the command
-	    format = "file"
-	)
-	
-	
-	
-	
-	
-	
+		)
 )
 
-list(eventdata, combined, study)
+list(eventdata_map, eventdata_combine, codelist_combine, study)

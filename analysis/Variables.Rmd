@@ -1,0 +1,24 @@
+---
+title: "Variables"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r include=FALSE}
+library(targets)
+library(tidyverse)
+library(DT)
+```
+
+```{r, results='asis'}
+tar_load(combined_codelists)
+
+for (i in 1:length(combined_codelists)) {
+  cat("##### ",names(combined_codelists)[i],"\n")
+  print(combined_codelists[[i]])
+  cat('\n\n')
+}
+```

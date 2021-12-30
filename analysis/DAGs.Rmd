@@ -1,0 +1,23 @@
+---
+title: "DAGs"
+output:
+  workflowr::wflow_html:
+    toc: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r include=FALSE}
+library(targets)
+library(tidyverse)
+library(dagitty)
+library(ggdag)
+```
+
+
+## Plot all DAGs
+
+```{r}
+map(tar_read(DAGs), plot)
+```
+

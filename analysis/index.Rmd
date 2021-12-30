@@ -14,6 +14,8 @@ editor_options:
 
 ## Shared resources
 #### Cohort definition
-#### Codelists
+#### [Variables](Variables.html)
 #### Sensitivity Analyses
 #### Exclusions
+#### [DAGs](DAGs.html)
+
