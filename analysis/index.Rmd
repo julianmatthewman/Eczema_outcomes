@@ -13,9 +13,7 @@ editor_options:
 #### [results_lymphoma](results_lymphoma.html)
 
 ## Shared resources
-#### Cohort definition
+#### [Pipeline](pipeline.html)
 #### [Variables](Variables.html)
-#### Sensitivity Analyses
-#### Exclusions
 #### [DAGs](DAGs.html)
 
