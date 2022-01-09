@@ -1,5 +1,5 @@
 ---
-title: "Results"
+title: "Results Lymphoma"
 output:
   workflowr::wflow_html:
     toc: false
@@ -11,9 +11,13 @@ editor_options:
 library(targets)
 library(tidyverse)
 library(DT)
+library(dagitty)
 ```
 
+## Specifications
+
 Specify relevant results:
+
 ```{r}
 exposures <- c("eczema")
 outcomes <- c("lymphoma")
@@ -21,9 +25,20 @@ models <- c("crude", "adjusted_sex", "adjusted_sex_bmi")
 exclusions <- c("none", "asthma")
 ```
 
+Specify relevant DAG:
+```{r}
+dag <- tar_read(DAGs)[["confounder_adjusted_simple"]]
+```
 
-The following results are relevant for this study:
+
+## Inputs {.tabset}
+
+### Included
+
+The following combinations of inputs are relevant for this study:
+
 ```{r echo=FALSE}
+#Filter results based on given specifications
 results <- tar_read(results_regression) %>% 
     filter(term %in% exposures,
            exposure %in% exposures,
@@ -36,7 +51,10 @@ results %>%
     datatable()
 ```
 
-The following results are not relevant for the selected exposures and outcomes and were dropped:
+### Excluded
+
+The following combinations of inputs are not relevant for the selected exposures and outcomes and were dropped:
+
 ```{r echo=FALSE}
 results_dropped <- tar_read(results_regression) %>% 
     filter(
@@ -55,8 +73,17 @@ results_dropped %>%
 
 ```
 
+### DAG
 
+The following DAG was chosen as the most appropriate for these analyses
 ```{r}
+plot(dag)
+```
+
+
+## Results
+
+```{r Forest Plot}
 results %>% 
     ggplot(aes(x=model, y=estimate)) +
     geom_pointrange(aes(ymin=conf.low, ymax=conf.high)) +
@@ -64,4 +91,3 @@ results %>%
     geom_hline(yintercept=1, lty=2)
 
 ```
-

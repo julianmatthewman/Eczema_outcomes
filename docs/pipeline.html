@@ -298,7 +298,7 @@ $(document).ready(function () {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2022-01-02
+<strong>Last updated:</strong> 2022-01-09
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
@@ -322,7 +322,7 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 </div>
 <div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown is untracked by Git. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
@@ -389,16 +389,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree3f3dfb60be1f025ad1b827e30eb00020bf73fa48targetblank3f3dfb6a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/3f3dfb60be1f025ad1b827e30eb00020bf73fa48" target="_blank">3f3dfb6</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree7c41445df8440df059b65e72cbae88290460e01etargetblank7c41445a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/7c41445df8440df059b65e72cbae88290460e01e" target="_blank">7c41445</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree3f3dfb60be1f025ad1b827e30eb00020bf73fa48targetblank3f3dfb6a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree7c41445df8440df059b65e72cbae88290460e01etargetblank7c41445a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/3f3dfb60be1f025ad1b827e30eb00020bf73fa48" target="_blank">3f3dfb6</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/7c41445df8440df059b65e72cbae88290460e01e" target="_blank">7c41445</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -415,10 +415,145 @@ Ignored files:
     Ignored:    renv/staging/
 
 Untracked files:
-    Untracked:  analysis/pipeline.Rmd
+    Untracked:  _targets/objects/codelist_files_files
+    Untracked:  _targets/objects/codelists_0d720592
+    Untracked:  _targets/objects/codelists_12830759
+    Untracked:  _targets/objects/codelists_36806624
+    Untracked:  _targets/objects/codelists_4e6adc27
+    Untracked:  _targets/objects/codelists_553f6dff
+    Untracked:  _targets/objects/codelists_5867fa8c
+    Untracked:  _targets/objects/codelists_917cb91e
+    Untracked:  _targets/objects/codelists_98495407
+    Untracked:  _targets/objects/codelists_b4656857
+    Untracked:  _targets/objects/codelists_c009f6a1
+    Untracked:  _targets/objects/codelists_c5b4963a
+    Untracked:  _targets/objects/codelists_d1f7ec53
+    Untracked:  _targets/objects/codelists_e12cc7f9
+    Untracked:  _targets/objects/codelists_f44b2792
+    Untracked:  _targets/objects/codelists_f8a9f917
+    Untracked:  _targets/objects/codelists_files
+    Untracked:  _targets/objects/codelists_metadata_01aa351e
+    Untracked:  _targets/objects/codelists_metadata_10c98c46
+    Untracked:  _targets/objects/codelists_metadata_1b96870e
+    Untracked:  _targets/objects/codelists_metadata_1d74e384
+    Untracked:  _targets/objects/codelists_metadata_328b5f79
+    Untracked:  _targets/objects/codelists_metadata_495dd02c
+    Untracked:  _targets/objects/codelists_metadata_66cccb58
+    Untracked:  _targets/objects/codelists_metadata_757b13f6
+    Untracked:  _targets/objects/codelists_metadata_8aa818c4
+    Untracked:  _targets/objects/codelists_metadata_a50d8408
+    Untracked:  _targets/objects/codes_075b52f2
+    Untracked:  _targets/objects/codes_0c87f258
+    Untracked:  _targets/objects/codes_359cff4c
+    Untracked:  _targets/objects/codes_5ec8b14a
+    Untracked:  _targets/objects/codes_932dcf35
+    Untracked:  _targets/objects/eventdata_0a0733b6
+    Untracked:  _targets/objects/eventdata_11e30626
+    Untracked:  _targets/objects/eventdata_1e1669fe
+    Untracked:  _targets/objects/eventdata_28e3e3bf
+    Untracked:  _targets/objects/eventdata_3a1cee06
+    Untracked:  _targets/objects/eventdata_48a42b49
+    Untracked:  _targets/objects/eventdata_4dfa612e
+    Untracked:  _targets/objects/eventdata_55aba7bb
+    Untracked:  _targets/objects/eventdata_631dcbd4
+    Untracked:  _targets/objects/eventdata_6bbb8db3
+    Untracked:  _targets/objects/eventdata_7b26b998
+    Untracked:  _targets/objects/eventdata_7c4651c9
+    Untracked:  _targets/objects/eventdata_841a7ed0
+    Untracked:  _targets/objects/eventdata_878f973e
+    Untracked:  _targets/objects/eventdata_8ae41e85
+    Untracked:  _targets/objects/eventdata_8b403c68
+    Untracked:  _targets/objects/eventdata_a006123f
+    Untracked:  _targets/objects/eventdata_a620d043
+    Untracked:  _targets/objects/eventdata_a77b740e
+    Untracked:  _targets/objects/eventdata_bb15c955
+    Untracked:  _targets/objects/eventdata_c5a8c72e
+    Untracked:  _targets/objects/eventdata_c81c70d9
+    Untracked:  _targets/objects/eventdata_d298f13a
+    Untracked:  _targets/objects/eventdata_d3e6062c
+    Untracked:  _targets/objects/eventdata_d7361b9a
+    Untracked:  _targets/objects/eventdata_e94d7d22
+    Untracked:  _targets/objects/extract_files
+    Untracked:  _targets/objects/extract_patterns
+    Untracked:  _targets/objects/metadata_01aa351e
+    Untracked:  _targets/objects/metadata_10c98c46
+    Untracked:  _targets/objects/metadata_1b96870e
+    Untracked:  _targets/objects/metadata_1f319254
+    Untracked:  _targets/objects/metadata_22461520
+    Untracked:  _targets/objects/metadata_236e10b9
+    Untracked:  _targets/objects/metadata_353c6df3
+    Untracked:  _targets/objects/metadata_495dd02c
+    Untracked:  _targets/objects/metadata_66cccb58
+    Untracked:  _targets/objects/metadata_d8382e10
+    Untracked:  _targets/objects/source_files_files
+    Untracked:  _targets/objects/source_patterns
 
 Unstaged changes:
+    Modified:   .DS_Store
+    Deleted:    R/analysis_baseline_characteristics.R
+    Deleted:    R/analysis_interaction.R
+    Deleted:    R/analysis_rates.R
+    Deleted:    R/checks.R
+    Modified:   R/create_cohort_eczema.R
+    Deleted:    R/create_cohort_steroids.R
+    Deleted:    R/create_fractures_all.R
+    Deleted:    R/create_prescriptions_expanded.R
+    Deleted:    R/create_prescriptions_ped.R
+    Deleted:    R/create_prescriptions_risk_threshold.R
+    Deleted:    R/report_DAGs.R
+    Deleted:    R/report_exposed_counts.R
+    Deleted:    R/report_forest_plot_fp.R
+    Deleted:    R/report_participant_flow.R
+    Modified:   _targets.R
+    Modified:   _targets/meta/meta
+    Modified:   _targets/objects/cohort_eczema
+    Modified:   _targets/objects/cohort_post_exclusion_63d8d0e9
+    Modified:   _targets/objects/cohort_post_exclusion_95405a37
+    Modified:   _targets/objects/cohort_post_exclusion_bc59f3ca
+    Modified:   _targets/objects/main_cohort
+    Modified:   _targets/objects/results_regression_0209915f
+    Modified:   _targets/objects/results_regression_0838945a
+    Modified:   _targets/objects/results_regression_0e6829a0
+    Modified:   _targets/objects/results_regression_1cb32fcf
+    Modified:   _targets/objects/results_regression_2158962c
+    Modified:   _targets/objects/results_regression_309ec63a
+    Modified:   _targets/objects/results_regression_336512c2
+    Modified:   _targets/objects/results_regression_3a672bcc
+    Modified:   _targets/objects/results_regression_3c660c96
+    Modified:   _targets/objects/results_regression_3ce753f1
+    Modified:   _targets/objects/results_regression_43cf81f3
+    Modified:   _targets/objects/results_regression_4556d38e
+    Modified:   _targets/objects/results_regression_47efe48c
+    Modified:   _targets/objects/results_regression_4ebc1dd8
+    Modified:   _targets/objects/results_regression_51b813ff
+    Modified:   _targets/objects/results_regression_532979d8
+    Modified:   _targets/objects/results_regression_53dff07d
+    Modified:   _targets/objects/results_regression_607822d6
+    Modified:   _targets/objects/results_regression_671c2a99
+    Modified:   _targets/objects/results_regression_6f209b1b
+    Modified:   _targets/objects/results_regression_71d26878
+    Modified:   _targets/objects/results_regression_7b5f3c11
+    Modified:   _targets/objects/results_regression_880b2bca
+    Modified:   _targets/objects/results_regression_8881a25e
+    Modified:   _targets/objects/results_regression_8b3d4ea7
+    Modified:   _targets/objects/results_regression_9289cbe6
+    Modified:   _targets/objects/results_regression_93a4d16b
+    Modified:   _targets/objects/results_regression_9c79fee1
+    Modified:   _targets/objects/results_regression_a6197fa2
+    Modified:   _targets/objects/results_regression_ab276110
+    Modified:   _targets/objects/results_regression_ae08f804
+    Modified:   _targets/objects/results_regression_b5c20bc4
+    Modified:   _targets/objects/results_regression_b71223e6
+    Modified:   _targets/objects/results_regression_b9819763
+    Modified:   _targets/objects/results_regression_d1513cb3
+    Modified:   _targets/objects/results_regression_e623132a
+    Modified:   analysis/DAGs.Rmd
     Modified:   analysis/index.Rmd
+    Modified:   analysis/pipeline.Rmd
+    Modified:   analysis/results_fractures.Rmd
+    Modified:   analysis/results_lymphoma.Rmd
+    Modified:   codelists/.DS_Store
+    Modified:   codelists/SNOMED/.DS_Store
 
 </code></pre>
 <p>
@@ -431,21 +566,81 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in t
 <hr>
 </div>
 <div id="versions" class="tab-pane fade">
+
 <p>
-There are no past versions. Publish this analysis with <code>wflow_publish()</code> to start tracking its development.
+These are the previous versions of the repository in which changes were made to the R Markdown (<code>analysis/pipeline.Rmd</code>) and HTML (<code>docs/pipeline.html</code>) files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view the files as they were in that past version.
 </p>
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+File
+</th>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+<th>
+Message
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/7c41445df8440df059b65e72cbae88290460e01e/analysis/pipeline.Rmd" target="_blank">7c41445</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2022-01-09
+</td>
+<td>
+Added pipeline doc
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/julianmatthewman/Eczema_outcomes/7c41445df8440df059b65e72cbae88290460e01e/docs/pipeline.html" target="_blank">7c41445</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2022-01-09
+</td>
+<td>
+Added pipeline doc
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <hr>
 </div>
 </div>
 </div>
-<pre class="r"><code>tar_glimpse()</code></pre>
+<pre class="r"><code>targets::tar_glimpse()</code></pre>
 <pre><code>here() starts at /Users/Julian/Documents/GitHub/Eczema_outcomes
 Warning messages:
 1: package ‘targets’ was built under R version 4.0.2 
 2: package ‘tarchetypes’ was built under R version 4.0.2 
 3: package ‘here’ was built under R version 4.0.2 </code></pre>
 <div id="htmlwidget-ead371cf12d07a0c8d8f" style="width:672px;height:480px;" class="visNetwork html-widget"></div>
-<script type="application/json" data-for="htmlwidget-ead371cf12d07a0c8d8f">{"x":{"nodes":{"name":["main_cohort","codelist_eczema","path_codelist_asthma","model","eventdata_lymphoma","codelist_fractures","combined_codelists","cohort_eczema","source_files_lymphoma","codelist_lymphoma","eventdata_asthma","path_main_cohort","source_files_eczema","exclusion","source_files_fractures","results_regression","combined_eventdata","outcome","path_codelist_eczema","exposure","DAGs","path_codelist_fractures","source_files_asthma","cohort_post_exclusion","eventdata_prednisolone","analysis","source_files_prednisolone","eventdata_eczema","path_codelist_lymphoma","path_codelist_prednisolone","codelist_asthma","codelist_prednisolone","eventdata_fractures"],"type":["stem","stem","stem","stem","pattern","stem","stem","stem","stem","stem","pattern","stem","stem","stem","stem","pattern","stem","stem","stem","stem","stem","stem","stem","pattern","pattern","stem","stem","pattern","stem","stem","stem","stem","pattern"],"status":["none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none"],"seconds":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"bytes":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"id":["main_cohort","codelist_eczema","path_codelist_asthma","model","eventdata_lymphoma","codelist_fractures","combined_codelists","cohort_eczema","source_files_lymphoma","codelist_lymphoma","eventdata_asthma","path_main_cohort","source_files_eczema","exclusion","source_files_fractures","results_regression","combined_eventdata","outcome","path_codelist_eczema","exposure","DAGs","path_codelist_fractures","source_files_asthma","cohort_post_exclusion","eventdata_prednisolone","analysis","source_files_prednisolone","eventdata_eczema","path_codelist_lymphoma","path_codelist_prednisolone","codelist_asthma","codelist_prednisolone","eventdata_fractures"],"label":["main_cohort","codelist_eczema","path_codelist_asthma","model","eventdata_lymphoma","codelist_fractures","combined_codelists","cohort_eczema","source_files_lymphoma","codelist_lymphoma","eventdata_asthma","path_main_cohort","source_files_eczema","exclusion","source_files_fractures","results_regression","combined_eventdata","outcome","path_codelist_eczema","exposure","DAGs","path_codelist_fractures","source_files_asthma","cohort_post_exclusion","eventdata_prednisolone","analysis","source_files_prednisolone","eventdata_eczema","path_codelist_lymphoma","path_codelist_prednisolone","codelist_asthma","codelist_prednisolone","eventdata_fractures"],"level":[2,2,1,1,3,2,3,5,1,2,3,1,1,1,1,7,4,1,1,1,0,1,1,6,3,0,1,3,1,1,2,2,3],"color":["#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac"],"shape":["dot","dot","dot","dot","square","dot","dot","dot","dot","dot","square","dot","dot","dot","dot","square","dot","dot","dot","dot","dot","dot","dot","square","square","dot","dot","square","dot","dot","dot","dot","square"]},"edges":{"from":["path_main_cohort","path_codelist_eczema","codelist_lymphoma","source_files_lymphoma","path_codelist_fractures","codelist_asthma","codelist_eczema","codelist_fractures","codelist_lymphoma","codelist_prednisolone","combined_eventdata","main_cohort","path_codelist_lymphoma","codelist_asthma","source_files_asthma","cohort_post_exclusion","exclusion","exposure","model","outcome","eventdata_asthma","eventdata_eczema","eventdata_fractures","eventdata_lymphoma","eventdata_prednisolone","cohort_eczema","exclusion","codelist_prednisolone","source_files_prednisolone","codelist_eczema","source_files_eczema","path_codelist_asthma","path_codelist_prednisolone","codelist_fractures","source_files_fractures"],"to":["main_cohort","codelist_eczema","eventdata_lymphoma","eventdata_lymphoma","codelist_fractures","combined_codelists","combined_codelists","combined_codelists","combined_codelists","combined_codelists","cohort_eczema","cohort_eczema","codelist_lymphoma","eventdata_asthma","eventdata_asthma","results_regression","results_regression","results_regression","results_regression","results_regression","combined_eventdata","combined_eventdata","combined_eventdata","combined_eventdata","combined_eventdata","cohort_post_exclusion","cohort_post_exclusion","eventdata_prednisolone","eventdata_prednisolone","eventdata_eczema","eventdata_eczema","codelist_asthma","codelist_prednisolone","eventdata_fractures","eventdata_fractures"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":1,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Stem","Pattern"],"shape":["dot","square"],"color":["#899DA4","#899DA4"]},"nodesToDataframe":true}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-ead371cf12d07a0c8d8f">{"x":{"nodes":{"name":["outcome","results_regression","metadata","exclusion","exposure","extract","codelists","extract_files","extract_patterns","cohort_post_exclusion","cohort_eczema","eventdata","codelists_files","main_cohort","codes","model"],"type":["stem","pattern","pattern","stem","stem","pattern","pattern","stem","stem","pattern","stem","pattern","stem","stem","pattern","stem"],"status":["none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none"],"seconds":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"bytes":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"branches":[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null],"id":["outcome","results_regression","metadata","exclusion","exposure","extract","codelists","extract_files","extract_patterns","cohort_post_exclusion","cohort_eczema","eventdata","codelists_files","main_cohort","codes","model"],"label":["outcome","results_regression","metadata","exclusion","exposure","extract","codelists","extract_files","extract_patterns","cohort_post_exclusion","cohort_eczema","eventdata","codelists_files","main_cohort","codes","model"],"level":[1,8,3,1,1,3,2,2,1,7,6,5,1,1,4,1],"color":["#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac","#94a4ac"],"shape":["dot","square","square","dot","dot","square","square","dot","dot","square","dot","square","dot","dot","square","dot"]},"edges":{"from":["cohort_post_exclusion","exclusion","exposure","model","outcome","codelists","extract_files","codelists_files","extract_patterns","cohort_eczema","exclusion","eventdata","main_cohort","metadata","codes","extract","extract_patterns","metadata","codelists","metadata"],"to":["results_regression","results_regression","results_regression","results_regression","results_regression","metadata","extract","codelists","extract_files","cohort_post_exclusion","cohort_post_exclusion","cohort_eczema","cohort_eczema","cohort_eczema","eventdata","eventdata","eventdata","eventdata","codes","codes"],"arrows":["to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to","to"]},"nodesToDataframe":true,"edgesToDataframe":true,"options":{"width":"100%","height":"100%","nodes":{"shape":"dot","physics":false},"manipulation":{"enabled":false},"edges":{"smooth":{"type":"cubicBezier","forceDirection":"horizontal"}},"physics":{"stabilization":false},"layout":{"hierarchical":{"enabled":true,"direction":"LR"}}},"groups":null,"width":null,"height":null,"idselection":{"enabled":false,"style":"width: 150px; height: 26px","useLabels":true,"main":"Select by id"},"byselection":{"enabled":false,"style":"width: 150px; height: 26px","multiple":false,"hideColor":"rgba(200,200,200,0.5)","highlight":false},"main":{"text":"","style":"font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;font-size:20px;text-align:center;"},"submain":null,"footer":null,"background":"rgba(0, 0, 0, 0)","highlight":{"enabled":true,"hoverNearest":false,"degree":{"from":1,"to":1},"algorithm":"hierarchical","hideColor":"rgba(200,200,200,0.5)","labelOnly":true},"collapse":{"enabled":true,"fit":false,"resetHighlight":true,"clusterOptions":null,"keepCoord":true,"labelSuffix":"(cluster)"},"legend":{"width":0.2,"useGroups":false,"position":"right","ncol":1,"stepX":100,"stepY":100,"zoom":true,"nodes":{"label":["Stem","Pattern"],"shape":["dot","square"],"color":["#899DA4","#899DA4"]},"nodesToDataframe":true}},"evals":[],"jsHooks":[]}</script>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">
@@ -468,23 +663,20 @@ locale:
 attached base packages:
 [1] stats     graphics  grDevices datasets  utils     methods   base     
 
-other attached packages:
-[1] targets_0.8.1
-
 loaded via a namespace (and not attached):
  [1] Rcpp_1.0.7        pillar_1.6.4      compiler_4.0.0    later_1.3.0      
  [5] jquerylib_0.1.4   git2r_0.29.0      workflowr_1.6.2   tools_4.0.0      
- [9] digest_0.6.29     jsonlite_1.7.2    evaluate_0.14     lifecycle_1.0.1  
-[13] tibble_3.1.6      pkgconfig_2.0.3   rlang_0.4.12      igraph_1.2.9     
-[17] cli_3.1.0         rstudioapi_0.13   yaml_2.2.1        xfun_0.28        
-[21] fastmap_1.1.0     withr_2.4.3       stringr_1.4.0     knitr_1.36       
-[25] htmlwidgets_1.5.4 fs_1.5.1          vctrs_0.3.8       tidyselect_1.1.1 
-[29] rprojroot_2.0.2   data.table_1.14.2 glue_1.5.1        R6_2.5.1         
-[33] processx_3.5.2    fansi_0.5.0       rmarkdown_2.11    purrr_0.3.4      
-[37] callr_3.7.0       magrittr_2.0.1    promises_1.2.0.1  ps_1.6.0         
-[41] codetools_0.2-18  ellipsis_0.3.2    htmltools_0.5.2   renv_0.14.0      
-[45] httpuv_1.6.3      utf8_1.2.2        stringi_1.7.6     visNetwork_2.1.0 
-[49] crayon_1.4.2     </code></pre>
+ [9] targets_0.8.1     digest_0.6.29     jsonlite_1.7.2    evaluate_0.14    
+[13] lifecycle_1.0.1   tibble_3.1.6      pkgconfig_2.0.3   rlang_0.4.12     
+[17] igraph_1.2.9      cli_3.1.0         rstudioapi_0.13   yaml_2.2.1       
+[21] xfun_0.28         fastmap_1.1.0     withr_2.4.3       stringr_1.4.0    
+[25] knitr_1.36        htmlwidgets_1.5.4 fs_1.5.1          vctrs_0.3.8      
+[29] tidyselect_1.1.1  rprojroot_2.0.2   data.table_1.14.2 glue_1.5.1       
+[33] R6_2.5.1          processx_3.5.2    fansi_0.5.0       rmarkdown_2.11   
+[37] purrr_0.3.4       callr_3.7.0       magrittr_2.0.1    whisker_0.4      
+[41] codetools_0.2-18  promises_1.2.0.1  ps_1.6.0          ellipsis_0.3.2   
+[45] htmltools_0.5.2   renv_0.14.0       httpuv_1.6.3      utf8_1.2.2       
+[49] stringi_1.7.6     visNetwork_2.1.0  crayon_1.4.2     </code></pre>
 </div>
 
 

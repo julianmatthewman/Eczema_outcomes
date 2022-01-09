@@ -7,12 +7,8 @@ editor_options:
   chunk_output_type: console
 ---
 
-```{r include=FALSE}
-library(targets)
-```
-
-```{r}
-tar_glimpse()
+```{r message=FALSE, warning=FALSE}
+targets::tar_glimpse()
 ```
 
 

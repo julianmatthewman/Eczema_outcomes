@@ -1,5 +1,5 @@
 ---
-title: "Results"
+title: "Results Fractures"
 output:
   workflowr::wflow_html:
     toc: false
@@ -14,7 +14,7 @@ library(DT)
 library(dagitty)
 ```
 
-## Analysis Specifications
+## Specifications
 
 Specify relevant results:
 
@@ -83,7 +83,7 @@ plot(dag)
 
 ## Results
 
-```{r}
+```{r Forest Plot}
 results %>% 
     ggplot(aes(x=model, y=estimate)) +
     geom_pointrange(aes(ymin=conf.low, ymax=conf.high)) +

@@ -8,12 +8,12 @@ editor_options:
   chunk_output_type: console
 ---
 
-## Studies
-#### [results_fractures](results_fractures.html)
-#### [results_lymphoma](results_lymphoma.html)
+## Results by Outcome
+#### [Fractures](results_fractures.html)
+#### [Lymphoma](results_lymphoma.html)
 
 ## Shared resources
 #### [Pipeline](pipeline.html)
-#### [Variables](Variables.html)
-#### [DAGs](DAGs.html)
+#### [Variables](variables.html)
+#### [DAGs](dags.html)
 

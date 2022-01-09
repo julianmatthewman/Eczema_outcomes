@@ -9,7 +9,7 @@ library(here)
 #plan(callr)
 
 # Source all functions from the "R" folder
-sapply(list.files("R", full.names = TRUE) ,source, .GlobalEnv)
+sapply(list.files("R", full.names = TRUE), source, .GlobalEnv)
 
 # Set target-specific options such as packages.
 tar_option_set(
@@ -39,48 +39,56 @@ tar_option_set(
 	)
 ) 
 
-
-
-
-
-# Eventdata ---------------------------------------------------------
+#Set paths
 source_path <- "dummy_data"
 
-eventdata_map <- tar_map(
-        unlist = FALSE,
-        values = dplyr::tribble( # Specify the name of the variable, path to the codelist, search pattern and column to search the code in
-            ~name, ~codelist_path, ~source_pattern, ~codevar,
-            "eczema", "codelists/ICD-10/eczema/codelist.csv", "extract_clinical", "V1",
-            "asthma", "codelists/ICD-10/asthma/codelist.csv", "extract_clinical", "V1",
-            "fractures", "codelists/ICD-10/fractures/codelist.csv", "extract_clinical", "V1",
-            "lymphoma", "codelists/ICD-10/lymphoma/codelist.csv", "extract_clinical", "V1",
-            "prednisolone", "codelists/SNOMED/prednisolone/codelist.csv", "extract_therapy", "SNOMED Code",
-            # To add a new entry, specify the name the variable should have, the path to the codelist, the file to be searched in (as a search pattern) and the column to be searched in
-        ),
-        names = name,
-        tar_target(source_files, dir(source_path, pattern = source_pattern, full.names = TRUE)), # Provides file paths to search in
-        tar_file(path_codelist, codelist_path), # Specifies and tracks the codelist file
-        tar_target(codelist, sort(import(path_codelist)[[codevar]])), # Loads the codes from the codelist file
-        tar_target(eventdata, import(source_files) %>% filter(eval(sym(codevar)) %in% codelist), # Makes the eventdata
-                   pattern = map(source_files)) # Iterates over all the file paths provided
-        #add if eventdata should be written to disk: tar_parquet(parquet, write_parquet(eventdata, paste0("eventdata/", paste0("eventdata_", name, ".parquet")))) # Writes the file in parquet format (tar_parquet is shorthand for tar_target(format="parquet"))
-    )
-
-eventdata_combine <- tar_combine(
-    combined_eventdata,
-    eventdata_map[[4]],
-    command = list(!!!.x))
-
-codelist_combine <- tar_combine(
-    combined_codelists,
-    eventdata_map[[3]],
-    command = list(!!!.x))
 
 
-# List of target objects.
-study <- list(
+
+
+
+list(
+    
+    # Eventdata ---------------------------------------------------------
+    # The following targets declare steps necessary to extract eventdata using source data and codelists
+    
+    tar_target( # Define search patterns for source files
+        extract_patterns,
+        c("extract_clinical","extract_therapy")
+    ),
+    tar_files( #Make target tracking all the source files
+        extract,
+        list.files("dummy_data", pattern = paste(extract_patterns, collapse = "|"), full.names = TRUE, recursive = TRUE)
+    ),   
+    tar_files( #Make target tracking all the codelist files
+        codelists,
+        list.files("codelists", pattern = "codelist.csv", full.names = TRUE, recursive = TRUE)
+    ),        
+    tar_target( # Creates metadata for codelists such as which is the code variable
+        metadata,
+        tibble(
+            name=strsplit(codelists[[1]], "/")[[1]][[3]], #name is in third place of folder hierarchy i.e. codelists/coding-system/name/codelist.csv
+            codevar=ifelse(str_detect(codelists, "ICD-10"), "V1", "SNOMED Code"),
+            pattern=ifelse(str_detect(codelists, "ICD-10"), "extract_clinical", "extract_therapy")),
+        pattern = map(codelists)
+    ),
+    tar_target( # Loads the codes from the codelist files
+        codes, 
+        sort(import(codelists)[[metadata$codevar]]),
+        pattern = map(codelists, metadata),
+        iteration = "list"
+    ), 
+    tar_target( # Iterates over all the file paths provided
+        eventdata, 
+        import(extract[extract_patterns==metadata$pattern]) %>% filter(eval(sym(metadata$codevar)) %in% codes), 
+        pattern = map(codes, metadata),
+        iteration = "list"
+    ),
 	
+    
+    
 	# Specifications -------------------------------------------------------------
+    # The following targets declare any specifications that can be set by the user
 	
 	# Specify outcomes
 	tar_target(
@@ -103,20 +111,6 @@ study <- list(
 	    c(NA, "lymphoma", "asthma")
 	),
 	
-	
-	#Specify analyses
-	tar_target(
-		analysis,
-		head(n=99, #TEMPORARILY TURN OFF SENSITIVITY ANALYSES TO SPEED UP RUNTIME
-		c("main", #Main analysis
-			"sens_all_follow_up", #Sensitivity analysis: Follow up not limited to 1 year
-			"sens_shorter_windows", #Sensitivity analysis: Use shorter windows to define exposure
-			"sens_all_ped_imputed", #Sensitivity analysis: Impute all values for PED
-			"sens_no_asthma", #Sensitivity analysis: Exclude people who ever have a record for asthma
-			"sens_all_ages") #Sensitivity analysis: don't restrict to only those aged 66+ when they cross the risk threshold for the first time
-		)
-	),
-	
 	# Specify models for regression
 	tar_target(
 	    model, 
@@ -126,25 +120,17 @@ study <- list(
 	    )
 	),
 	
-	# Specify DAGs
-	tar_target(
-	    DAGs,
-	    report_DAGs()
-	),
-	
-
-    # File paths --------------------------------------------------------------
-
-	tar_file(path_main_cohort, "dummy_data/dummy_main_cohort.csv"),
+    
 	
 	# Data management ------------------------------------------------------------
+    # The following targets declare any data management steps
 	tar_target(
 		main_cohort, 
-		read_csv(path_main_cohort)
+		read_csv("dummy_data/dummy_main_cohort.csv")
 		),
 	tar_target(
 		cohort_eczema, 
-		create_cohort_eczema(main_cohort, combined_eventdata),
+		create_cohort_eczema(main_cohort, eventdata, metadata),
 	),
 	tar_target(
 	    cohort_post_exclusion,
@@ -155,6 +141,7 @@ study <- list(
 	
 	
 	# Analysis -------------------------------------------------------------------
+    # The following targets declare analysis steps
 	tar_target(
 		results_regression, 
 		analysis_regression(cohort_post_exclusion, exposure, outcome, model, exclusion),
@@ -162,4 +149,3 @@ study <- list(
 		)
 )
 
-list(eventdata_map, eventdata_combine, codelist_combine, study)
