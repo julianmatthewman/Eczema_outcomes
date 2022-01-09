@@ -284,7 +284,7 @@ $(document).ready(function () {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -293,7 +293,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -305,7 +305,7 @@ $(document).ready(function () {
 <strong>Last updated:</strong> 2022-01-09
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
 </p>
 <p>
 <strong>Knit directory:</strong> <code>Eczema_outcomes/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -321,12 +321,12 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
+<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
 </div>
 </div>
 </div>
@@ -393,16 +393,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestreeea5f80eef2869dccfb12828ca2e6c8361e74172etargetblankea5f80ea"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/ea5f80eef2869dccfb12828ca2e6c8361e74172e" target="_blank">ea5f80e</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree7f29e82468fb3ebc58ee2e76d12fe138211aad16targetblank7f29e82a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/7f29e82468fb3ebc58ee2e76d12fe138211aad16" target="_blank">7f29e82</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestreeea5f80eef2869dccfb12828ca2e6c8361e74172etargetblankea5f80ea" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree7f29e82468fb3ebc58ee2e76d12fe138211aad16targetblank7f29e82a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/ea5f80eef2869dccfb12828ca2e6c8361e74172e" target="_blank">ea5f80e</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/7f29e82468fb3ebc58ee2e76d12fe138211aad16" target="_blank">7f29e82</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -419,6 +419,10 @@ Ignored files:
     Ignored:    renv/library/
     Ignored:    renv/local/
     Ignored:    renv/staging/
+
+Unstaged changes:
+    Modified:   analysis/results_fractures.Rmd
+    Modified:   analysis/results_lymphoma.Rmd
 
 </code></pre>
 <p>
@@ -457,6 +461,23 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/julianmatthewman/Eczema_outcomes/7f29e82468fb3ebc58ee2e76d12fe138211aad16/docs/results_lymphoma.html" target="_blank">7f29e82</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2022-01-09
+</td>
+<td>
+Update results_lymphoma.html
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -712,8 +733,8 @@ exclusions &lt;- c(&quot;none&quot;, &quot;asthma&quot;)</code></pre>
 <p>Specify relevant DAG:</p>
 <pre class="r"><code>dag &lt;- DAGs[[&quot;confounder_adjusted_simple&quot;]]</code></pre>
 </div>
-<div id="inputs" class="section level2 tabset">
-<h2>Inputs</h2>
+<div id="decisions" class="section level2">
+<h2>Decisions</h2>
 <div id="included" class="section level3">
 <h3>Included</h3>
 <p>The following combinations of inputs are relevant for this study:</p>

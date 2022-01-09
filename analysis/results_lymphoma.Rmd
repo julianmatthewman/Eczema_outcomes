@@ -32,7 +32,7 @@ dag <- DAGs[["confounder_adjusted_simple"]]
 ```
 
 
-## Inputs {.tabset}
+## Decisions
 
 ### Included
 
