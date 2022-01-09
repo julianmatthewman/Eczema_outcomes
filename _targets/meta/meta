@@ -162,20 +162,12 @@ extract_2cc6bed3|branch|58dea03923291e58|1fb6c147e678e90e|ead7d738a7acff7e|97677
 extract|pattern|abb782428d585412|1fb6c147e678e90e||-2132641220||||6131940|file|vector||extract_016cbd4d*extract_2cc6bed3|0.002||
 codes|pattern|aa78a8327b65855d|986bab064c85eef4||-1420541532||||9241|rds|list||codes_0c87f258*codes_932dcf35*codes_359cff4c*codes_5ec8b14a*codes_075b52f2|0.059||
 eventdata|pattern|af7028b4f28328e5|250f19eaee942dba||265240160||||565228|rds|list||eventdata_28e3e3bf*eventdata_e94d7d22*eventdata_c81c70d9*eventdata_a006123f*eventdata_55aba7bb|0.14||
-create_eventdata|function|96c3898102302671||||||||||||||
-create_cohort_eczema|function|d446e44c7413f705||||||||||||||
-source_path|object|68bcbe68844803c2||||||||||||||
-create_cohort_post_exclusions|function|c126046ee14c0b20||||||||||||||
-make_dummy_data|function|6907ede2c42af941||||||||||||||
-analysis_regression|function|58c9325b97781d65||||||||||||||
 outcome|stem|b4c8fcc57952bbb6|ec6ca0e84d201ac2|a3dad144c40657ed|2021572777||t19001.7005177035s|17e1813002340629|93|rds|vector||outcome_b1e9b63b*outcome_aa62646c*outcome_1560e5ae*outcome_c1ed9409|5.553|package forcats was built under R version 4.0.2|
 exclusion|stem|6a8d8aa913cf8112|aec0d2afeaea4790|a3dad144c40657ed|-1945633688||t19001.7005181558s|c6fbfb9abe15abfd|72|rds|vector||exclusion_93d3d96d*exclusion_c1ed9409*exclusion_b1e9b63b|0||
 exposure|stem|c4efd3d597903ebe|8b04fff2abb93a85|a3dad144c40657ed|-1756888678||t19001.7005182799s|9064907978062c20|56|rds|vector||exposure_412dd7c4|0.001||
 model|stem|3c7de6a5e9742921|bf28d10c55c9a1f7|a3dad144c40657ed|1816327236||t19001.7005183852s|c1aa9ca10fc19154|116|rds|vector||model_f8a21c04*model_a313faeb*model_046b40c6|0.001||
-codelists_files|stem|f3ca70e913d71212|b7bcaedc8bbb2829|88559740b2c6d4c9|1147589568||t19001.7005184889s|70a0bb6673f8b3be|137|rds|vector||codelists_files_9f40a056*codelists_files_c8ebecb0*codelists_files_c7453ea6*codelists_files_d771b16d*codelists_files_f1fa65ae|0.001||
 extract_patterns|stem|3223a1a104aef4bb|92e93317b083c800|a3dad144c40657ed|-2054772656||t19001.7005185945s|dff9495c51b724c1|77|rds|vector|||0||
 main_cohort|stem|55a8373c708a7bfb|97af8e2cb1c614c8|7199b9143a2e7ccc|1462933600||t19001.7005237089s|f720fe477bee783f|252141|rds|vector|||0.366||
-extract_files|stem|34bd62761be50fba|0f07e1ebcc7e1da5|bc4ad28b5fefac39|-1344553334||t19001.7005242513s|f0d5811415b6b792|97|rds|vector||extract_files_272771b3*extract_files_e93a954d|0.001||
 metadata_22461520|branch|c67a9db999bb27b0|d7ed4d0b3a48d18b|2fef476237d10147|1894376297||t19001.700524506s|ef5bb583e5bfa4cd|174|rds|vector|metadata||0.009||
 metadata_353c6df3|branch|af42f0280452aa76|d7ed4d0b3a48d18b|bc37bf6991acb385|-1430004246||t19001.7005246583s|ec519ceac14e6e00|175|rds|vector|metadata||0.003||
 metadata_236e10b9|branch|ee29bc5f4fe8e028|d7ed4d0b3a48d18b|d38719afb9b6cfc5|-1132412937||t19001.7005247866s|ef5bb583e5bfa4cd|174|rds|vector|metadata||0.002||
@@ -231,3 +223,11 @@ results_regression_336512c2|branch|9fa07f421ac05b8f|1aeaffb41f26df6e|8817d293bef
 results_regression_309ec63a|branch|35a649a338b54ddf|1aeaffb41f26df6e|91dd229ebe58706a|-1650859016||t19001.7009281462s|d2d1db4a210f8f40|309|rds|vector|results_regression||0.557||
 results_regression_7b5f3c11|branch|88fdf9b66e2f9ac6|1aeaffb41f26df6e|bf8ecd9966510231|-55724307||t19001.7009354799s|a0cdeb7a83ca634e|391|rds|vector|results_regression||0.62||
 results_regression_1cb32fcf|branch|17c933058f224b5c|1aeaffb41f26df6e|72db22911d9d0201|1737245207||t19001.7009451455s|f3cf95d7b5806e03|565|rds|vector|results_regression||0.822||
+create_eventdata|function|96c3898102302671||||||||||||||
+create_cohort_eczema|function|d446e44c7413f705||||||||||||||
+source_path|object|68bcbe68844803c2||||||||||||||
+create_cohort_post_exclusions|function|c126046ee14c0b20||||||||||||||
+make_dummy_data|function|6907ede2c42af941||||||||||||||
+analysis_regression|function|58c9325b97781d65||||||||||||||
+codelists_files|stem|f3ca70e913d71212|b7bcaedc8bbb2829|88559740b2c6d4c9|1147589568||t19001.7431233332s|70a0bb6673f8b3be|137|rds|vector||codelists_files_9f40a056*codelists_files_c8ebecb0*codelists_files_c7453ea6*codelists_files_d771b16d*codelists_files_f1fa65ae|5.534|package forcats was built under R version 4.0.2|
+extract_files|stem|34bd62761be50fba|0f07e1ebcc7e1da5|bc4ad28b5fefac39|-1344553334||t19001.7431242992s|f0d5811415b6b792|97|rds|vector||extract_files_272771b3*extract_files_e93a954d|0.002||

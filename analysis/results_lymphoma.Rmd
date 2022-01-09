@@ -27,7 +27,8 @@ exclusions <- c("none", "asthma")
 
 Specify relevant DAG:
 ```{r}
-dag <- tar_read(DAGs)[["confounder_adjusted_simple"]]
+source(knitr::purl("analysis/dags.Rmd")) # Get DAGs from other markdown document
+dag <- DAGs[["confounder_adjusted_simple"]]
 ```
 
 

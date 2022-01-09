@@ -1,20 +1,11 @@
----
-title: "DAGs"
-output:
-  workflowr::wflow_html:
-    toc: false
-editor_options:
-  chunk_output_type: console
----
-
-```{r include=FALSE}
+## ----include=FALSE------------------------------------------------------------
 library(targets)
 library(tidyverse)
 library(dagitty)
 library(ggdag)
-```
 
-```{r Define all DAGs, include=FALSE}
+
+## ----Define all DAGs, include=FALSE-------------------------------------------
 DAGs <- list(
         confounder_adjusted_simple = dagitty('dag {
 bb="0,0,1,1"
@@ -58,12 +49,8 @@ Confounder -> Outcome
 Eczema -> Mediator -> Outcome
 }')
     )   
-```
 
 
-## Plot all DAGs
-
-```{r}
+## -----------------------------------------------------------------------------
 map(DAGs, plot)
-```
 

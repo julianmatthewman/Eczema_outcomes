@@ -276,7 +276,7 @@ $(document).ready(function () {
 
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
-<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span>
+<span class="glyphicon glyphicon-list" aria-hidden="true"></span> workflowr <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
 </button>
 </p>
 <div id="workflowr-report" class="collapse">
@@ -285,7 +285,7 @@ $(document).ready(function () {
 <a data-toggle="tab" href="#summary">Summary</a>
 </li>
 <li>
-<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> </a>
+<a data-toggle="tab" href="#checks"> Checks <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> </a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -297,7 +297,7 @@ $(document).ready(function () {
 <strong>Last updated:</strong> 2022-01-09
 </p>
 <p>
-<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
+<strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>Eczema_outcomes/</code> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" title="This is the local directory in which the code in this file was executed."> </span>
@@ -313,12 +313,12 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges"> <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date </a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges" class="panel-collapse collapse">
+<div id="strongRMarkdownfilestronguptodate" class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has unstaged changes. To know which version of the R Markdown file created these results, you’ll want to first commit it to the Git repo. If you’re still working on the analysis, you can ignore this warning. When you’re finished, you can run <code>wflow_publish</code> to commit the R Markdown file and build the HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git repository, you know the exact version of the code that produced these results.</p>
 </div>
 </div>
 </div>
@@ -385,16 +385,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree7c41445df8440df059b65e72cbae88290460e01etargetblank7c41445a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/7c41445df8440df059b65e72cbae88290460e01e" target="_blank">7c41445</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree6915c208d535981eb49d08b2c1440b96340cdb37targetblank6915c20a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/6915c208d535981eb49d08b2c1440b96340cdb37" target="_blank">6915c20</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree7c41445df8440df059b65e72cbae88290460e01etargetblank7c41445a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree6915c208d535981eb49d08b2c1440b96340cdb37targetblank6915c20a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/7c41445df8440df059b65e72cbae88290460e01e" target="_blank">7c41445</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/6915c208d535981eb49d08b2c1440b96340cdb37" target="_blank">6915c20</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -404,148 +404,18 @@ Ignored files:
     Ignored:    .Rhistory
     Ignored:    .Rproj.user/
     Ignored:    R/.Rhistory
+    Ignored:    _targets/.DS_Store
     Ignored:    _targets/meta/process
     Ignored:    _targets/meta/progress
+    Ignored:    _targets/objects/.DS_Store
     Ignored:    renv/library/
     Ignored:    renv/local/
     Ignored:    renv/staging/
 
-Untracked files:
-    Untracked:  _targets/objects/codelist_files_files
-    Untracked:  _targets/objects/codelists_0d720592
-    Untracked:  _targets/objects/codelists_12830759
-    Untracked:  _targets/objects/codelists_36806624
-    Untracked:  _targets/objects/codelists_4e6adc27
-    Untracked:  _targets/objects/codelists_553f6dff
-    Untracked:  _targets/objects/codelists_5867fa8c
-    Untracked:  _targets/objects/codelists_917cb91e
-    Untracked:  _targets/objects/codelists_98495407
-    Untracked:  _targets/objects/codelists_b4656857
-    Untracked:  _targets/objects/codelists_c009f6a1
-    Untracked:  _targets/objects/codelists_c5b4963a
-    Untracked:  _targets/objects/codelists_d1f7ec53
-    Untracked:  _targets/objects/codelists_e12cc7f9
-    Untracked:  _targets/objects/codelists_f44b2792
-    Untracked:  _targets/objects/codelists_f8a9f917
-    Untracked:  _targets/objects/codelists_files
-    Untracked:  _targets/objects/codelists_metadata_01aa351e
-    Untracked:  _targets/objects/codelists_metadata_10c98c46
-    Untracked:  _targets/objects/codelists_metadata_1b96870e
-    Untracked:  _targets/objects/codelists_metadata_1d74e384
-    Untracked:  _targets/objects/codelists_metadata_328b5f79
-    Untracked:  _targets/objects/codelists_metadata_495dd02c
-    Untracked:  _targets/objects/codelists_metadata_66cccb58
-    Untracked:  _targets/objects/codelists_metadata_757b13f6
-    Untracked:  _targets/objects/codelists_metadata_8aa818c4
-    Untracked:  _targets/objects/codelists_metadata_a50d8408
-    Untracked:  _targets/objects/codes_075b52f2
-    Untracked:  _targets/objects/codes_0c87f258
-    Untracked:  _targets/objects/codes_359cff4c
-    Untracked:  _targets/objects/codes_5ec8b14a
-    Untracked:  _targets/objects/codes_932dcf35
-    Untracked:  _targets/objects/eventdata_0a0733b6
-    Untracked:  _targets/objects/eventdata_11e30626
-    Untracked:  _targets/objects/eventdata_1e1669fe
-    Untracked:  _targets/objects/eventdata_28e3e3bf
-    Untracked:  _targets/objects/eventdata_3a1cee06
-    Untracked:  _targets/objects/eventdata_48a42b49
-    Untracked:  _targets/objects/eventdata_4dfa612e
-    Untracked:  _targets/objects/eventdata_55aba7bb
-    Untracked:  _targets/objects/eventdata_631dcbd4
-    Untracked:  _targets/objects/eventdata_6bbb8db3
-    Untracked:  _targets/objects/eventdata_7b26b998
-    Untracked:  _targets/objects/eventdata_7c4651c9
-    Untracked:  _targets/objects/eventdata_841a7ed0
-    Untracked:  _targets/objects/eventdata_878f973e
-    Untracked:  _targets/objects/eventdata_8ae41e85
-    Untracked:  _targets/objects/eventdata_8b403c68
-    Untracked:  _targets/objects/eventdata_a006123f
-    Untracked:  _targets/objects/eventdata_a620d043
-    Untracked:  _targets/objects/eventdata_a77b740e
-    Untracked:  _targets/objects/eventdata_bb15c955
-    Untracked:  _targets/objects/eventdata_c5a8c72e
-    Untracked:  _targets/objects/eventdata_c81c70d9
-    Untracked:  _targets/objects/eventdata_d298f13a
-    Untracked:  _targets/objects/eventdata_d3e6062c
-    Untracked:  _targets/objects/eventdata_d7361b9a
-    Untracked:  _targets/objects/eventdata_e94d7d22
-    Untracked:  _targets/objects/extract_files
-    Untracked:  _targets/objects/extract_patterns
-    Untracked:  _targets/objects/metadata_01aa351e
-    Untracked:  _targets/objects/metadata_10c98c46
-    Untracked:  _targets/objects/metadata_1b96870e
-    Untracked:  _targets/objects/metadata_1f319254
-    Untracked:  _targets/objects/metadata_22461520
-    Untracked:  _targets/objects/metadata_236e10b9
-    Untracked:  _targets/objects/metadata_353c6df3
-    Untracked:  _targets/objects/metadata_495dd02c
-    Untracked:  _targets/objects/metadata_66cccb58
-    Untracked:  _targets/objects/metadata_d8382e10
-    Untracked:  _targets/objects/source_files_files
-    Untracked:  _targets/objects/source_patterns
-
 Unstaged changes:
     Modified:   .DS_Store
-    Deleted:    R/analysis_baseline_characteristics.R
-    Deleted:    R/analysis_interaction.R
-    Deleted:    R/analysis_rates.R
-    Deleted:    R/checks.R
-    Modified:   R/create_cohort_eczema.R
-    Deleted:    R/create_cohort_steroids.R
-    Deleted:    R/create_fractures_all.R
-    Deleted:    R/create_prescriptions_expanded.R
-    Deleted:    R/create_prescriptions_ped.R
-    Deleted:    R/create_prescriptions_risk_threshold.R
-    Deleted:    R/report_DAGs.R
-    Deleted:    R/report_exposed_counts.R
-    Deleted:    R/report_forest_plot_fp.R
-    Deleted:    R/report_participant_flow.R
-    Modified:   _targets.R
     Modified:   _targets/meta/meta
-    Modified:   _targets/objects/cohort_eczema
-    Modified:   _targets/objects/cohort_post_exclusion_63d8d0e9
-    Modified:   _targets/objects/cohort_post_exclusion_95405a37
-    Modified:   _targets/objects/cohort_post_exclusion_bc59f3ca
-    Modified:   _targets/objects/main_cohort
-    Modified:   _targets/objects/results_regression_0209915f
-    Modified:   _targets/objects/results_regression_0838945a
-    Modified:   _targets/objects/results_regression_0e6829a0
-    Modified:   _targets/objects/results_regression_1cb32fcf
-    Modified:   _targets/objects/results_regression_2158962c
-    Modified:   _targets/objects/results_regression_309ec63a
-    Modified:   _targets/objects/results_regression_336512c2
-    Modified:   _targets/objects/results_regression_3a672bcc
-    Modified:   _targets/objects/results_regression_3c660c96
-    Modified:   _targets/objects/results_regression_3ce753f1
-    Modified:   _targets/objects/results_regression_43cf81f3
-    Modified:   _targets/objects/results_regression_4556d38e
-    Modified:   _targets/objects/results_regression_47efe48c
-    Modified:   _targets/objects/results_regression_4ebc1dd8
-    Modified:   _targets/objects/results_regression_51b813ff
-    Modified:   _targets/objects/results_regression_532979d8
-    Modified:   _targets/objects/results_regression_53dff07d
-    Modified:   _targets/objects/results_regression_607822d6
-    Modified:   _targets/objects/results_regression_671c2a99
-    Modified:   _targets/objects/results_regression_6f209b1b
-    Modified:   _targets/objects/results_regression_71d26878
-    Modified:   _targets/objects/results_regression_7b5f3c11
-    Modified:   _targets/objects/results_regression_880b2bca
-    Modified:   _targets/objects/results_regression_8881a25e
-    Modified:   _targets/objects/results_regression_8b3d4ea7
-    Modified:   _targets/objects/results_regression_9289cbe6
-    Modified:   _targets/objects/results_regression_93a4d16b
-    Modified:   _targets/objects/results_regression_9c79fee1
-    Modified:   _targets/objects/results_regression_a6197fa2
-    Modified:   _targets/objects/results_regression_ab276110
-    Modified:   _targets/objects/results_regression_ae08f804
-    Modified:   _targets/objects/results_regression_b5c20bc4
-    Modified:   _targets/objects/results_regression_b71223e6
-    Modified:   _targets/objects/results_regression_b9819763
-    Modified:   _targets/objects/results_regression_d1513cb3
-    Modified:   _targets/objects/results_regression_e623132a
     Modified:   analysis/DAGs.Rmd
-    Modified:   codelists/.DS_Store
-    Modified:   codelists/SNOMED/.DS_Store
 
 </code></pre>
 <p>
@@ -558,190 +428,17 @@ Note that any generated files, e.g. HTML, png, CSS, etc., are not included in t
 <hr>
 </div>
 <div id="versions" class="tab-pane fade">
-
 <p>
-These are the previous versions of the repository in which changes were made to the R Markdown (<code>analysis/DAGs.Rmd</code>) and HTML (<code>docs/DAGs.html</code>) files. If you’ve configured a remote Git repository (see <code>?wflow_git_remote</code>), click on the hyperlinks in the table below to view the files as they were in that past version.
+There are no past versions. Publish this analysis with <code>wflow_publish()</code> to start tracking its development.
 </p>
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-File
-</th>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-<th>
-Message
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-Rmd
-</td>
-<td>
-<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/3f3dfb60be1f025ad1b827e30eb00020bf73fa48/analysis/DAGs.Rmd" target="_blank">3f3dfb6</a>
-</td>
-<td>
-julianmatthewman
-</td>
-<td>
-2021-12-30
-</td>
-<td>
-Added variables and DAGs to shared components
-</td>
-</tr>
-<tr>
-<td>
-html
-</td>
-<td>
-<a href="https://rawcdn.githack.com/julianmatthewman/Eczema_outcomes/3f3dfb60be1f025ad1b827e30eb00020bf73fa48/docs/DAGs.html" target="_blank">3f3dfb6</a>
-</td>
-<td>
-julianmatthewman
-</td>
-<td>
-2021-12-30
-</td>
-<td>
-Added variables and DAGs to shared components
-</td>
-</tr>
-</tbody>
-</table>
-</div>
 <hr>
 </div>
 </div>
 </div>
 <div id="plot-all-dags" class="section level2">
 <h2>Plot all DAGs</h2>
-<pre class="r"><code>map(tar_read(DAGs), plot)</code></pre>
-<p><img src="figure/DAGs.Rmd/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-1">
-Past versions of unnamed-chunk-2-1.png
-</button>
-</p>
-<div id="fig-unnamed-chunk-2-1" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/3f3dfb60be1f025ad1b827e30eb00020bf73fa48/docs/figure/DAGs.Rmd/unnamed-chunk-2-1.png" target="_blank">3f3dfb6</a>
-</td>
-<td>
-julianmatthewman
-</td>
-<td>
-2021-12-30
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><img src="figure/DAGs.Rmd/unnamed-chunk-2-2.png" width="672" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-2">
-Past versions of unnamed-chunk-2-2.png
-</button>
-</p>
-<div id="fig-unnamed-chunk-2-2" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/3f3dfb60be1f025ad1b827e30eb00020bf73fa48/docs/figure/DAGs.Rmd/unnamed-chunk-2-2.png" target="_blank">3f3dfb6</a>
-</td>
-<td>
-julianmatthewman
-</td>
-<td>
-2021-12-30
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><img src="figure/DAGs.Rmd/unnamed-chunk-2-3.png" width="672" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-3">
-Past versions of unnamed-chunk-2-3.png
-</button>
-</p>
-<div id="fig-unnamed-chunk-2-3" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/3f3dfb60be1f025ad1b827e30eb00020bf73fa48/docs/figure/DAGs.Rmd/unnamed-chunk-2-3.png" target="_blank">3f3dfb6</a>
-</td>
-<td>
-julianmatthewman
-</td>
-<td>
-2021-12-30
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
+<pre class="r"><code>map(DAGs, plot)</code></pre>
+<p><img src="figure/dags.Rmd/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /><img src="figure/dags.Rmd/unnamed-chunk-2-2.png" width="672" style="display: block; margin: auto;" /><img src="figure/dags.Rmd/unnamed-chunk-2-3.png" width="672" style="display: block; margin: auto;" /></p>
 <pre><code>$confounder_adjusted_simple
 $confounder_adjusted_simple$mar
 [1] 0 0 0 0
@@ -785,23 +482,22 @@ other attached packages:
 loaded via a namespace (and not attached):
  [1] Rcpp_1.0.7        lubridate_1.8.0   ps_1.6.0          V8_3.6.0         
  [5] assertthat_0.2.1  rprojroot_2.0.2   digest_0.6.29     utf8_1.2.2       
- [9] cellranger_1.1.0  R6_2.5.1          backports_1.4.0   reprex_2.0.1     
+ [9] R6_2.5.1          cellranger_1.1.0  backports_1.4.0   reprex_2.0.1     
 [13] evaluate_0.14     highr_0.9         httr_1.4.2        pillar_1.6.4     
 [17] rlang_0.4.12      curl_4.3.2        readxl_1.3.1      rstudioapi_0.13  
-[21] data.table_1.14.2 whisker_0.4       callr_3.7.0       jquerylib_0.1.4  
-[25] rmarkdown_2.11    igraph_1.2.9      munsell_0.5.0     broom_0.7.10     
-[29] compiler_4.0.0    httpuv_1.6.3      modelr_0.1.8      xfun_0.28        
-[33] pkgconfig_2.0.3   htmltools_0.5.2   tidyselect_1.1.1  workflowr_1.6.2  
-[37] codetools_0.2-18  fansi_0.5.0       crayon_1.4.2      tzdb_0.2.0       
-[41] dbplyr_2.1.1      withr_2.4.3       later_1.3.0       MASS_7.3-54      
-[45] grid_4.0.0        jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.1  
-[49] DBI_1.1.1         git2r_0.29.0      magrittr_2.0.1    scales_1.1.1     
-[53] cli_3.1.0         stringi_1.7.6     renv_0.14.0       fs_1.5.1         
-[57] promises_1.2.0.1  xml2_1.3.3        ellipsis_0.3.2    generics_0.1.1   
-[61] vctrs_0.3.8       boot_1.3-28       tools_4.0.0       glue_1.5.1       
-[65] hms_1.1.1         processx_3.5.2    fastmap_1.1.0     yaml_2.2.1       
-[69] colorspace_2.0-2  tidygraph_1.2.0   rvest_1.0.2       knitr_1.36       
-[73] haven_2.4.3      </code></pre>
+[21] data.table_1.14.2 callr_3.7.0       jquerylib_0.1.4   rmarkdown_2.11   
+[25] igraph_1.2.9      munsell_0.5.0     broom_0.7.10      compiler_4.0.0   
+[29] httpuv_1.6.3      modelr_0.1.8      xfun_0.28         pkgconfig_2.0.3  
+[33] htmltools_0.5.2   tidyselect_1.1.1  workflowr_1.6.2   codetools_0.2-18 
+[37] fansi_0.5.0       crayon_1.4.2      tzdb_0.2.0        dbplyr_2.1.1     
+[41] withr_2.4.3       later_1.3.0       MASS_7.3-54       grid_4.0.0       
+[45] jsonlite_1.7.2    gtable_0.3.0      lifecycle_1.0.1   DBI_1.1.1        
+[49] git2r_0.29.0      magrittr_2.0.1    scales_1.1.1      cli_3.1.0        
+[53] stringi_1.7.6     renv_0.14.0       fs_1.5.1          promises_1.2.0.1 
+[57] xml2_1.3.3        ellipsis_0.3.2    generics_0.1.1    vctrs_0.3.8      
+[61] boot_1.3-28       tools_4.0.0       glue_1.5.1        hms_1.1.1        
+[65] processx_3.5.2    fastmap_1.1.0     yaml_2.2.1        colorspace_2.0-2 
+[69] tidygraph_1.2.0   rvest_1.0.2       knitr_1.36        haven_2.4.3      </code></pre>
 </div>
 </div>
 
