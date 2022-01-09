@@ -100,10 +100,6 @@ codelists_f44b2792|branch|e9563b3f3a645d17|9db3849a9b8debb8|701b82ea3a898bb1|209
 codelist_files|pattern|e525310af19bc159|c74d5d5f08329f7b||-495105613||||0|file|vector||codelist_files_41862d28*codelist_files_2242ca05*codelist_files_ac8c3b88*codelist_files_22be297b*codelist_files_7d95861d|0||
 source_files_4a9f02e4|branch|58dea03923291e58|08e272a51f1add47|12449dae329f9687|11245650|dummy_data/dummy_extract_therapy.csv|t18965.4717539502s|d0e3a1825523feb4|4404070|file|vector|source_files||0.001||
 source_files|pattern|196e9b0490664bd3|08e272a51f1add47||1238641790||||4404070|file|vector||source_files_da18254b*source_files_4a9f02e4|0.001||
-outcome|stem|b4c8fcc57952bbb6|ec6ca0e84d201ac2|a3dad144c40657ed|2021572777||t18965.4805643283s|17e1813002340629|93|rds|vector||outcome_b1e9b63b*outcome_aa62646c*outcome_1560e5ae*outcome_c1ed9409|3.926|package forcats was built under R version 4.0.2|
-exclusion|stem|6a8d8aa913cf8112|aec0d2afeaea4790|a3dad144c40657ed|-1945633688||t18965.8609749309s|c6fbfb9abe15abfd|72|rds|vector||exclusion_93d3d96d*exclusion_c1ed9409*exclusion_b1e9b63b|0.002||
-exposure|stem|c4efd3d597903ebe|8b04fff2abb93a85|a3dad144c40657ed|-1756888678||t18965.4374735353s|9064907978062c20|56|rds|vector||exposure_412dd7c4|3.95|package forcats was built under R version 4.0.2|
-model|stem|3c7de6a5e9742921|bf28d10c55c9a1f7|a3dad144c40657ed|1816327236||t18965.4064202607s|c1aa9ca10fc19154|116|rds|vector||model_f8a21c04*model_a313faeb*model_046b40c6|3.942|package forcats was built under R version 4.0.2|
 DAGs|stem|f8a56471408c1f54|01d34639e1d77c33|a869a9649bd64fd8|-219545104||t18994.6788461s|fdec9ce76e2bcbf8|316|rds|vector|||3.25||
 path_main_cohort|stem|7addf6a80c7a7417|76ec5af83b0d8e95|ef46db3751d8e999|-1814823287|dummy_data/dummy_main_cohort.csv|t18965.4717240144s|b04ea4890bc911ef|775794|file|vector|||0.001||
 codelists_metadata_10c98c46|branch|c67a9db999bb27b0|8bc7fb48e0a5b333|4070cfc1bce6102d|1488161465||t19001.6337023213s|ef5bb583e5bfa4cd|174|rds|vector|codelists_metadata||0.013||
@@ -137,49 +133,9 @@ eventdata_7b26b998|branch|16b6495fe1dee1a9|3ede3ee197c5de50|0884d1a1df4bae7e|136
 eventdata_a620d043|branch|3f644b60b5aa0bee|3ede3ee197c5de50|e2e9e5681fcb217e|918467106||t19001.6370964847s|bf07e079ab7f51af|107913|rds|list|eventdata||0.021||
 eventdata_631dcbd4|branch|a96198a9849ecb54|3ede3ee197c5de50|2da278726d2c8dbc|-370821080||t19001.6370975051s|199682909f9daf59|101975|rds|list|eventdata||0.039||
 eventdata_841a7ed0|branch|1a46c47dd1bbdd84|3ede3ee197c5de50|eb328e4d15c33aa8|1124809844||t19001.6370990349s|5a453a658b451e8d|292570|rds|list|eventdata||0.031||
-cohort_post_exclusion_63d8d0e9|branch|8c8a01b3b9a77b76|a123f7c970d89f05|ec4a4d77dd8fb01e|1325374848||t19001.6385549257s|8d7a3ca50fce1960|906706|rds|vector|cohort_post_exclusion||0.001||
-cohort_post_exclusion_bc59f3ca|branch|41f233db48e3f990|a123f7c970d89f05|b96313e1bf463214|-856219921||t19001.6385621327s|11bee1a3116ad496|906726|rds|vector|cohort_post_exclusion||0.238||
-cohort_post_exclusion_95405a37|branch|cd0d9719abf50252|a123f7c970d89f05|c93fc86d9b994b1d|941973827||t19001.6385716997s|70c658301f15f44e|906725|rds|vector|cohort_post_exclusion||0.428||
 cohort_post_exclusion|pattern|7f8ba82c1e8bc82e|a123f7c970d89f05||-1780696895||||2720157|rds|vector||cohort_post_exclusion_63d8d0e9*cohort_post_exclusion_bc59f3ca*cohort_post_exclusion_95405a37|0.667||
-results_regression_0209915f|branch|9c546cc99b693019|1aeaffb41f26df6e|4527d20573963978|-1808910572||t19001.6385833349s|c98679baf4c2e099|315|rds|vector|results_regression||0.971|Loglik converged before variable  1  beta may be infinite.|
-results_regression_9c79fee1|branch|23879f2ee04bc7b8|1aeaffb41f26df6e|b90809eb111855ed|-1379657622||t19001.6385982322s|ffa9a2ac008006bc|395|rds|vector|results_regression||1.278|Loglik converged before variable  1  beta may be infinite.|
-results_regression_93a4d16b|branch|ffb93a8959a39492|1aeaffb41f26df6e|975d4fcb7548482f|144959963||t19001.6386156715s|0866fc996243a4b5|568|rds|vector|results_regression||1.496|Loglik converged before variable  1  beta may be infinite.|
-results_regression_607822d6|branch|5f3a0a6bd9059b01|1aeaffb41f26df6e|f146bd61d58797ec|255334713||t19001.6386221701s|d3e83d604f91dd7a|310|rds|vector|results_regression||0.55||
-results_regression_8881a25e|branch|e5fe6566d02ec883|1aeaffb41f26df6e|15d8a1fd3f4f129f|-408201024||t19001.6386316224s|e634ea2609ddfae9|387|rds|vector|results_regression||0.806||
-results_regression_8b3d4ea7|branch|bb899c6e22b08a11|1aeaffb41f26df6e|8eceece492d901f8|-1296448778||t19001.6386438352s|db2238f1e7c71911|562|rds|vector|results_regression||1.044||
-results_regression_880b2bca|branch|efa3a7d8e867239f|1aeaffb41f26df6e|37ef2eb0915c348b|1136543549||t19001.6386503347s|d3e83d604f91dd7a|310|rds|vector|results_regression||0.55||
-results_regression_43cf81f3|branch|52332366871bc0d6|1aeaffb41f26df6e|e60f940e20ae5c96|-716219749||t19001.638660235s|e5d2926a8e144e03|390|rds|vector|results_regression||0.843||
-results_regression_b71223e6|branch|b672804b92604948|1aeaffb41f26df6e|0c4d6842b4bff796|1389848061||t19001.638674969s|ad70a8dcd04daced|567|rds|vector|results_regression||1.261||
-results_regression_51b813ff|branch|56b1a3d21925847e|1aeaffb41f26df6e|87c48ba1e4fac084|1484138809||t19001.6386813508s|0592d33550c0bb62|308|rds|vector|results_regression||0.541||
-results_regression_47efe48c|branch|086d7629be8ac2e4|1aeaffb41f26df6e|1771f64dd4cd8c38|89141605||t19001.6386885275s|89bf07396b5b1413|389|rds|vector|results_regression||0.609||
-results_regression_b9819763|branch|d7eb94bb7c5370b0|1aeaffb41f26df6e|5cbb03097bb34a9e|503070||t19001.6386983541s|64b4ef739ce53b18|563|rds|vector|results_regression||0.838||
-results_regression_ab276110|branch|7c25693610f166a3|1aeaffb41f26df6e|6c01de1f906773c8|-698103306||t19001.6387089741s|4f7108de728dd56a|319|rds|vector|results_regression||0.906|Loglik converged before variable  1  beta may be infinite.|
-results_regression_d1513cb3|branch|7130ce60d9eae063|1aeaffb41f26df6e|676bbbf17272ef09|-712435109||t19001.6387186162s|e8324796932fa831|400|rds|vector|results_regression||0.82|Loglik converged before variable  1  beta may be infinite.|
-results_regression_3c660c96|branch|f8bc21eaa7a8a542|1aeaffb41f26df6e|c8a3e2be7c6714cb|1989300259||t19001.6387336474s|ddcd1827c84cc0ba|573|rds|vector|results_regression||1.287|Loglik converged before variable  1  beta may be infinite.|
-results_regression_4556d38e|branch|009854bba9638fdc|1aeaffb41f26df6e|63bb4649fa36d10b|-2000321423||t19001.638740209s|09ba59ab403de298|314|rds|vector|results_regression||0.554||
-results_regression_3a672bcc|branch|a6e1458d82347a42|1aeaffb41f26df6e|777bc40006e1e953|300701687||t19001.6387496078s|7fc248283f487b24|392|rds|vector|results_regression||0.798||
-results_regression_53dff07d|branch|c87f4c2aba1dadf6|1aeaffb41f26df6e|4fd92ea0488f09d3|-1605118500||t19001.6387590013s|ad70a8dcd04daced|567|rds|vector|results_regression||0.799||
-results_regression_532979d8|branch|5b6688975314a7ac|1aeaffb41f26df6e|f66b55add1e11bca|2001314253||t19001.6387655755s|44d8296aaebe8c60|317|rds|vector|results_regression||0.556||
-results_regression_9289cbe6|branch|dbb97c2bb57d55c4|1aeaffb41f26df6e|a6f0bd846dc90d26|-698785302||t19001.6387751436s|f586e7aff6cad421|396|rds|vector|results_regression||0.816||
-results_regression_71d26878|branch|38738de7659392a5|1aeaffb41f26df6e|9e82c636585bf7e9|-1887380091||t19001.6387854434s|ddcd1827c84cc0ba|573|rds|vector|results_regression||0.878||
-results_regression_671c2a99|branch|ebd906f7f148560d|1aeaffb41f26df6e|4ef4e5b5c4ea4e3a|1635700229||t19001.6387941314s|963debf989303649|304|rds|vector|results_regression||0.739||
-results_regression_2158962c|branch|bf5564d178c90739|1aeaffb41f26df6e|157426db5d934eed|-905251128||t19001.6388013077s|c4c272a184f75d8c|382|rds|vector|results_regression||0.608||
-results_regression_0838945a|branch|6b2cd695832819f7|1aeaffb41f26df6e|eaf463e61f00893b|-1423404019||t19001.6388135816s|cce5fe8eabf2775f|556|rds|vector|results_regression||1.049||
-results_regression_b5c20bc4|branch|0a237420a2a1d4ea|1aeaffb41f26df6e|ae9abe2dbcff0421|501857761||t19001.6388244122s|42453b716dfde1f4|311|rds|vector|results_regression||0.925|Loglik converged before variable  1  beta may be infinite.|
-results_regression_4ebc1dd8|branch|7d45ba02a3c8b8d2|1aeaffb41f26df6e|bff520bb4d12706d|491787227||t19001.638833997s|a97bf76e690c0a49|388|rds|vector|results_regression||0.817|Loglik converged before variable  1  beta may be infinite.|
-results_regression_e623132a|branch|e1c53532fd62e43b|1aeaffb41f26df6e|c72e4ca855b96e2c|1420986731||t19001.6388493567s|225002ec50985cb1|561|rds|vector|results_regression||1.315|Loglik converged before variable  1  beta may be infinite.|
-results_regression_3ce753f1|branch|acc21990d1e6e1ca|1aeaffb41f26df6e|0c5b386411be0da4|1736455697||t19001.638855774s|801cade07abe9db2|312|rds|vector|results_regression||0.543||
-results_regression_a6197fa2|branch|6776eb019f5a5315|1aeaffb41f26df6e|87075640acfee6fb|-477333019||t19001.6388653042s|89bf07396b5b1413|389|rds|vector|results_regression||0.814||
-results_regression_0e6829a0|branch|bca18384bd95c27f|1aeaffb41f26df6e|21e4b13a7cd88336|-807777132||t19001.638874805s|49b5fca74495725e|564|rds|vector|results_regression||0.808||
-results_regression_ae08f804|branch|6845c1dd56c8376a|1aeaffb41f26df6e|14a59d0c2f684cc0|-1362855700||t19001.6388814078s|c98679baf4c2e099|315|rds|vector|results_regression||0.558||
-results_regression_6f209b1b|branch|02bda2552719b6ce|1aeaffb41f26df6e|da35f9fbe40d24e0|1151504363||t19001.6388913683s|24e075d0352ab5d9|394|rds|vector|results_regression||0.848||
-results_regression_336512c2|branch|9fa07f421ac05b8f|1aeaffb41f26df6e|8817d293bef44ddb|1531114497||t19001.6389039462s|63a9aa779fd9cd3d|570|rds|vector|results_regression||1.075||
-results_regression_309ec63a|branch|35a649a338b54ddf|1aeaffb41f26df6e|91dd229ebe58706a|-1650859016||t19001.638910403s|d2d1db4a210f8f40|309|rds|vector|results_regression||0.547||
-results_regression_7b5f3c11|branch|88fdf9b66e2f9ac6|1aeaffb41f26df6e|bf8ecd9966510231|-55724307||t19001.6389200717s|a0cdeb7a83ca634e|391|rds|vector|results_regression||0.825||
-results_regression_1cb32fcf|branch|17c933058f224b5c|1aeaffb41f26df6e|72db22911d9d0201|1737245207||t19001.6389320238s|f3cf95d7b5806e03|565|rds|vector|results_regression||1.02||
 results_regression|pattern|745ada84c1f4a147|1aeaffb41f26df6e||2104831953||||15226|rds|vector||results_regression_0209915f*results_regression_9c79fee1*results_regression_93a4d16b*results_regression_607822d6*results_regression_8881a25e*results_regression_8b3d4ea7*results_regression_880b2bca*results_regression_43cf81f3*results_regression_b71223e6*results_regression_51b813ff*results_regression_47efe48c*results_regression_b9819763*results_regression_ab276110*results_regression_d1513cb3*results_regression_3c660c96*results_regression_4556d38e*results_regression_3a672bcc*results_regression_53dff07d*results_regression_532979d8*results_regression_9289cbe6*results_regression_71d26878*results_regression_671c2a99*results_regression_2158962c*results_regression_0838945a*results_regression_b5c20bc4*results_regression_4ebc1dd8*results_regression_e623132a*results_regression_3ce753f1*results_regression_a6197fa2*results_regression_0e6829a0*results_regression_ae08f804*results_regression_6f209b1b*results_regression_336512c2*results_regression_309ec63a*results_regression_7b5f3c11*results_regression_1cb32fcf|30.692||
 analysis|stem|47bcfeb5c6e178f6|c7a66dbcf757ed8d|a3dad144c40657ed|744237335||t19001.6433966s|083ed7cd5fdca87c|132|rds|vector|||0.001||
-main_cohort|stem|55a8373c708a7bfb|97af8e2cb1c614c8|7199b9143a2e7ccc|1462933600||t19001.6434013001s|f720fe477bee783f|252141|rds|vector|||0.323||
 report_DAGs|function|da4340656a71ff57||||||||||||||
 analysis_baseline_characteristics|function|c0895af6b1037fd2||||||||||||||
 report_forest_plot_fp|function|5bee55b2170c2e0e||||||||||||||
@@ -194,40 +150,84 @@ create_fractures_all|function|d1389f05fb6efd64||||||||||||||
 analysis_interaction|function|0154c0ccf438d682||||||||||||||
 codelist_files_files|stem|f3ca70e913d71212|b7bcaedc8bbb2829|88559740b2c6d4c9|1465350737||t19001.6765564353s|70a0bb6673f8b3be|137|rds|vector||codelist_files_files_9f40a056*codelist_files_files_c8ebecb0*codelist_files_files_c7453ea6*codelist_files_files_d771b16d*codelist_files_files_f1fa65ae|4.436|package forcats was built under R version 4.0.2|
 source_files_files|stem|34bd62761be50fba|1b5787330f697b99|1ac8f24c5696f2f6|-1363169984||t19001.6765572602s|f0d5811415b6b792|97|rds|vector||source_files_files_272771b3*source_files_files_e93a954d|0.001||
-extract_patterns|stem|3223a1a104aef4bb|92e93317b083c800|a3dad144c40657ed|-2054772656||t19001.681488543s|dff9495c51b724c1|77|rds|vector|||0.001||
 codelists_c30723f3|branch|17a98d0f7a9ba14d|b08d785c9d60d6bb|d593089b153628d5|60075108|codelists/ICD-10/asthma/codelist.csv|t18964.9208796296s|16378bc13a1c12d8|5852|file|vector|codelists||0.001||
 codelists_3e0ff680|branch|a35464c78709553b|b08d785c9d60d6bb|410f08182c856bba|-1428066992|codelists/ICD-10/eczema/codelist.csv|t18964.918912037s|65459a516dc6a82a|720|file|vector|codelists||0||
 codelists_29570b87|branch|5319eebd377241bb|b08d785c9d60d6bb|acab52e031107202|-532090517|codelists/ICD-10/fractures/codelist.csv|t18964.9205555556s|f17a4e1c88d055bf|4330294|file|vector|codelists||0.001||
 codelists_c8d0609a|branch|9e810bda89df32e4|b08d785c9d60d6bb|c836192f7ea2d59a|-1541479723|codelists/ICD-10/lymphoma/codelist.csv|t18965.469537037s|05dbd797afecc7ea|61364|file|vector|codelists||0.001||
 codelists_1809994d|branch|3eb878251dccee8d|b08d785c9d60d6bb|78f7e526da949b18|-1610563542|codelists/SNOMED/prednisolone/codelist.csv|t18964.9222685185s|c4a7f6b2cc487e20|124862|file|vector|codelists||0.001||
 codelists|pattern|f40e5e9165fee3ef|b08d785c9d60d6bb||1048442832||||4523092|file|vector||codelists_c30723f3*codelists_3e0ff680*codelists_29570b87*codelists_c8d0609a*codelists_1809994d|0.004||
-metadata_22461520|branch|c67a9db999bb27b0|d7ed4d0b3a48d18b|2fef476237d10147|1894376297||t19001.681489661s|ef5bb583e5bfa4cd|174|rds|vector|metadata||0.012||
-metadata_353c6df3|branch|af42f0280452aa76|d7ed4d0b3a48d18b|bc37bf6991acb385|-1430004246||t19001.6814897852s|ec519ceac14e6e00|175|rds|vector|metadata||0.003||
-metadata_236e10b9|branch|ee29bc5f4fe8e028|d7ed4d0b3a48d18b|d38719afb9b6cfc5|-1132412937||t19001.6814899048s|ef5bb583e5bfa4cd|174|rds|vector|metadata||0.002||
-metadata_1f319254|branch|3b4d25b7a4c859ee|d7ed4d0b3a48d18b|8c365d2d4105e770|1173653578||t19001.6814900284s|37e90c3ecba3a0b1|177|rds|vector|metadata||0.003||
-metadata_d8382e10|branch|d580eb85fa6ddf0c|d7ed4d0b3a48d18b|72fdf4935f4d5bc3|-1830210032||t19001.6814901422s|11684eb95dbf8c0d|189|rds|vector|metadata||0.003||
 metadata|pattern|2458ea77d2b56cf9|d7ed4d0b3a48d18b||2062409165||||889|rds|vector||metadata_22461520*metadata_353c6df3*metadata_236e10b9*metadata_1f319254*metadata_d8382e10|0.023||
 extract_016cbd4d|branch|33931e56ca355035|1fb6c147e678e90e|be21da1f43d4ed2f|-1401836118|dummy_data/dummy_extract_clinical.csv|t18965.4717404105s|064c656890aac1a7|1727870|file|vector|extract||0.001||
 extract_2cc6bed3|branch|58dea03923291e58|1fb6c147e678e90e|ead7d738a7acff7e|976775316|dummy_data/dummy_extract_therapy.csv|t18965.4717539502s|d0e3a1825523feb4|4404070|file|vector|extract||0.001||
 extract|pattern|abb782428d585412|1fb6c147e678e90e||-2132641220||||6131940|file|vector||extract_016cbd4d*extract_2cc6bed3|0.002||
-codes_0c87f258|branch|a900b3a6c8217673|986bab064c85eef4|30f8fcf9f313f7f3|1511282190||t19001.6814906945s|241bf920421d9078|105|rds|list|codes||0.004||
-codes_932dcf35|branch|db7a2ae99e4752e4|986bab064c85eef4|36a48494e1b85d70|2124492077||t19001.6814908172s|8a2d295a6f6be5b7|61|rds|list|codes||0.003||
-codes_359cff4c|branch|9cf4ad6a38a7a1cc|986bab064c85eef4|9a400b91eb955b04|1094204444||t19001.681491496s|10aebf7f8a93c594|4690|rds|list|codes||0.043||
-codes_5ec8b14a|branch|92633621fed0193e|986bab064c85eef4|7de2fe83fde1ad42|69847492||t19001.6814916366s|3e0fddb8c2da2da5|154|rds|list|codes||0.004||
-codes_075b52f2|branch|9bade1386e1c4e15|986bab064c85eef4|685cbd18ceb82f4c|-1631982297||t19001.6814917912s|2ef9c85078f8cb51|4231|rds|list|codes||0.005||
 codes|pattern|aa78a8327b65855d|986bab064c85eef4||-1420541532||||9241|rds|list||codes_0c87f258*codes_932dcf35*codes_359cff4c*codes_5ec8b14a*codes_075b52f2|0.059||
-eventdata_28e3e3bf|branch|a96e7281ee336e59|250f19eaee942dba|fd446674d54ec8ab|5152811||t19001.6814925375s|aa51e1ff3973e4ab|52363|rds|list|eventdata||0.027||
-eventdata_e94d7d22|branch|16b6495fe1dee1a9|250f19eaee942dba|fd075d00f158bbc1|818006437||t19001.6814929316s|d3fe7205f9a21420|10407|rds|list|eventdata||0.02||
-eventdata_c81c70d9|branch|3f644b60b5aa0bee|250f19eaee942dba|62bd28bd8cf3edbb|-934003916||t19001.6814937841s|bf07e079ab7f51af|107913|rds|list|eventdata||0.022||
-eventdata_a006123f|branch|a96198a9849ecb54|250f19eaee942dba|9f7b7f896d085a90|2055319063||t19001.6814946336s|199682909f9daf59|101975|rds|list|eventdata||0.021||
-eventdata_55aba7bb|branch|1a46c47dd1bbdd84|250f19eaee942dba|b2edd805eeb38e49|40055365||t19001.6814964386s|5a453a658b451e8d|292570|rds|list|eventdata||0.05||
 eventdata|pattern|af7028b4f28328e5|250f19eaee942dba||265240160||||565228|rds|list||eventdata_28e3e3bf*eventdata_e94d7d22*eventdata_c81c70d9*eventdata_a006123f*eventdata_55aba7bb|0.14||
-cohort_eczema|stem|54baf352f498cd90|ee0fc05da319713b|e9a4612a8eb704de|1966631942||t19001.6815405705s|cf1a995b1f5bc5ad|906669|rds|vector|||3.405||
 create_eventdata|function|96c3898102302671||||||||||||||
 create_cohort_eczema|function|d446e44c7413f705||||||||||||||
 source_path|object|68bcbe68844803c2||||||||||||||
 create_cohort_post_exclusions|function|c126046ee14c0b20||||||||||||||
 make_dummy_data|function|6907ede2c42af941||||||||||||||
 analysis_regression|function|58c9325b97781d65||||||||||||||
-codelists_files|stem|f3ca70e913d71212|b7bcaedc8bbb2829|88559740b2c6d4c9|1147589568||t19001.6838196845s|70a0bb6673f8b3be|137|rds|vector||codelists_files_9f40a056*codelists_files_c8ebecb0*codelists_files_c7453ea6*codelists_files_d771b16d*codelists_files_f1fa65ae|4.472|package forcats was built under R version 4.0.2|
-extract_files|stem|34bd62761be50fba|0f07e1ebcc7e1da5|bc4ad28b5fefac39|-1344553334||t19001.6838203951s|f0d5811415b6b792|97|rds|vector||extract_files_272771b3*extract_files_e93a954d|0.003||
+outcome|stem|b4c8fcc57952bbb6|ec6ca0e84d201ac2|a3dad144c40657ed|2021572777||t19001.7005177035s|17e1813002340629|93|rds|vector||outcome_b1e9b63b*outcome_aa62646c*outcome_1560e5ae*outcome_c1ed9409|5.553|package forcats was built under R version 4.0.2|
+exclusion|stem|6a8d8aa913cf8112|aec0d2afeaea4790|a3dad144c40657ed|-1945633688||t19001.7005181558s|c6fbfb9abe15abfd|72|rds|vector||exclusion_93d3d96d*exclusion_c1ed9409*exclusion_b1e9b63b|0||
+exposure|stem|c4efd3d597903ebe|8b04fff2abb93a85|a3dad144c40657ed|-1756888678||t19001.7005182799s|9064907978062c20|56|rds|vector||exposure_412dd7c4|0.001||
+model|stem|3c7de6a5e9742921|bf28d10c55c9a1f7|a3dad144c40657ed|1816327236||t19001.7005183852s|c1aa9ca10fc19154|116|rds|vector||model_f8a21c04*model_a313faeb*model_046b40c6|0.001||
+codelists_files|stem|f3ca70e913d71212|b7bcaedc8bbb2829|88559740b2c6d4c9|1147589568||t19001.7005184889s|70a0bb6673f8b3be|137|rds|vector||codelists_files_9f40a056*codelists_files_c8ebecb0*codelists_files_c7453ea6*codelists_files_d771b16d*codelists_files_f1fa65ae|0.001||
+extract_patterns|stem|3223a1a104aef4bb|92e93317b083c800|a3dad144c40657ed|-2054772656||t19001.7005185945s|dff9495c51b724c1|77|rds|vector|||0||
+main_cohort|stem|55a8373c708a7bfb|97af8e2cb1c614c8|7199b9143a2e7ccc|1462933600||t19001.7005237089s|f720fe477bee783f|252141|rds|vector|||0.366||
+extract_files|stem|34bd62761be50fba|0f07e1ebcc7e1da5|bc4ad28b5fefac39|-1344553334||t19001.7005242513s|f0d5811415b6b792|97|rds|vector||extract_files_272771b3*extract_files_e93a954d|0.001||
+metadata_22461520|branch|c67a9db999bb27b0|d7ed4d0b3a48d18b|2fef476237d10147|1894376297||t19001.700524506s|ef5bb583e5bfa4cd|174|rds|vector|metadata||0.009||
+metadata_353c6df3|branch|af42f0280452aa76|d7ed4d0b3a48d18b|bc37bf6991acb385|-1430004246||t19001.7005246583s|ec519ceac14e6e00|175|rds|vector|metadata||0.003||
+metadata_236e10b9|branch|ee29bc5f4fe8e028|d7ed4d0b3a48d18b|d38719afb9b6cfc5|-1132412937||t19001.7005247866s|ef5bb583e5bfa4cd|174|rds|vector|metadata||0.002||
+metadata_1f319254|branch|3b4d25b7a4c859ee|d7ed4d0b3a48d18b|8c365d2d4105e770|1173653578||t19001.7005249239s|37e90c3ecba3a0b1|177|rds|vector|metadata||0.003||
+metadata_d8382e10|branch|d580eb85fa6ddf0c|d7ed4d0b3a48d18b|72fdf4935f4d5bc3|-1830210032||t19001.7005250705s|11684eb95dbf8c0d|189|rds|vector|metadata||0.003||
+codes_0c87f258|branch|a900b3a6c8217673|986bab064c85eef4|30f8fcf9f313f7f3|1511282190||t19001.7005254639s|241bf920421d9078|105|rds|list|codes||0.005||
+codes_932dcf35|branch|db7a2ae99e4752e4|986bab064c85eef4|36a48494e1b85d70|2124492077||t19001.7005256158s|8a2d295a6f6be5b7|61|rds|list|codes||0.003||
+codes_359cff4c|branch|9cf4ad6a38a7a1cc|986bab064c85eef4|9a400b91eb955b04|1094204444||t19001.7005269067s|10aebf7f8a93c594|4690|rds|list|codes||0.095||
+codes_5ec8b14a|branch|92633621fed0193e|986bab064c85eef4|7de2fe83fde1ad42|69847492||t19001.7005270675s|3e0fddb8c2da2da5|154|rds|list|codes||0.004||
+codes_075b52f2|branch|9bade1386e1c4e15|986bab064c85eef4|685cbd18ceb82f4c|-1631982297||t19001.7005272822s|2ef9c85078f8cb51|4231|rds|list|codes||0.009||
+eventdata_28e3e3bf|branch|a96e7281ee336e59|250f19eaee942dba|fd446674d54ec8ab|5152811||t19001.7005281358s|aa51e1ff3973e4ab|52363|rds|list|eventdata||0.04||
+eventdata_e94d7d22|branch|16b6495fe1dee1a9|250f19eaee942dba|fd075d00f158bbc1|818006437||t19001.7005285431s|d3fe7205f9a21420|10407|rds|list|eventdata||0.021||
+eventdata_c81c70d9|branch|3f644b60b5aa0bee|250f19eaee942dba|62bd28bd8cf3edbb|-934003916||t19001.7005293868s|bf07e079ab7f51af|107913|rds|list|eventdata||0.022||
+eventdata_a006123f|branch|a96198a9849ecb54|250f19eaee942dba|9f7b7f896d085a90|2055319063||t19001.7005304369s|199682909f9daf59|101975|rds|list|eventdata||0.038||
+eventdata_55aba7bb|branch|1a46c47dd1bbdd84|250f19eaee942dba|b2edd805eeb38e49|40055365||t19001.7005323634s|5a453a658b451e8d|292570|rds|list|eventdata||0.065||
+cohort_eczema|stem|54baf352f498cd90|ee0fc05da319713b|e9a4612a8eb704de|1966631942||t19001.7005735405s|cf1a995b1f5bc5ad|906669|rds|vector|||3.158||
+cohort_post_exclusion_63d8d0e9|branch|8c8a01b3b9a77b76|a123f7c970d89f05|ec4a4d77dd8fb01e|1325374848||t19001.7005782104s|8d7a3ca50fce1960|906706|rds|vector|cohort_post_exclusion||0.001||
+cohort_post_exclusion_bc59f3ca|branch|41f233db48e3f990|a123f7c970d89f05|b96313e1bf463214|-856219921||t19001.7005880227s|11bee1a3116ad496|906726|rds|vector|cohort_post_exclusion||0.449||
+cohort_post_exclusion_95405a37|branch|cd0d9719abf50252|a123f7c970d89f05|c93fc86d9b994b1d|941973827||t19001.7005951791s|70c658301f15f44e|906725|rds|vector|cohort_post_exclusion||0.223||
+results_regression_0209915f|branch|9c546cc99b693019|1aeaffb41f26df6e|4527d20573963978|-1808910572||t19001.7006075349s|c98679baf4c2e099|315|rds|vector|results_regression||1.016|Loglik converged before variable  1  beta may be infinite.|
+results_regression_9c79fee1|branch|23879f2ee04bc7b8|1aeaffb41f26df6e|b90809eb111855ed|-1379657622||t19001.7006223488s|ffa9a2ac008006bc|395|rds|vector|results_regression||1.269|Loglik converged before variable  1  beta may be infinite.|
+results_regression_93a4d16b|branch|ffb93a8959a39492|1aeaffb41f26df6e|975d4fcb7548482f|144959963||t19001.7006401511s|0866fc996243a4b5|568|rds|vector|results_regression||1.523|Loglik converged before variable  1  beta may be infinite.|
+results_regression_607822d6|branch|5f3a0a6bd9059b01|1aeaffb41f26df6e|f146bd61d58797ec|255334713||t19001.7006463389s|d3e83d604f91dd7a|310|rds|vector|results_regression||0.522||
+results_regression_8881a25e|branch|e5fe6566d02ec883|1aeaffb41f26df6e|15d8a1fd3f4f129f|-408201024||t19001.7006558241s|e634ea2609ddfae9|387|rds|vector|results_regression||0.809||
+results_regression_8b3d4ea7|branch|bb899c6e22b08a11|1aeaffb41f26df6e|8eceece492d901f8|-1296448778||t19001.7006654885s|db2238f1e7c71911|562|rds|vector|results_regression||0.823||
+results_regression_880b2bca|branch|efa3a7d8e867239f|1aeaffb41f26df6e|37ef2eb0915c348b|1136543549||t19001.7006720871s|d3e83d604f91dd7a|310|rds|vector|results_regression||0.558||
+results_regression_43cf81f3|branch|52332366871bc0d6|1aeaffb41f26df6e|e60f940e20ae5c96|-716219749||t19001.7006795045s|e5d2926a8e144e03|390|rds|vector|results_regression||0.627||
+results_regression_b71223e6|branch|b672804b92604948|1aeaffb41f26df6e|0c4d6842b4bff796|1389848061||t19001.7006922674s|ad70a8dcd04daced|567|rds|vector|results_regression||1.09||
+results_regression_51b813ff|branch|56b1a3d21925847e|1aeaffb41f26df6e|87c48ba1e4fac084|1484138809||t19001.7006984918s|0592d33550c0bb62|308|rds|vector|results_regression||0.525||
+results_regression_47efe48c|branch|086d7629be8ac2e4|1aeaffb41f26df6e|1771f64dd4cd8c38|89141605||t19001.7007081326s|89bf07396b5b1413|389|rds|vector|results_regression||0.821||
+results_regression_b9819763|branch|d7eb94bb7c5370b0|1aeaffb41f26df6e|5cbb03097bb34a9e|503070||t19001.7007180726s|64b4ef739ce53b18|563|rds|vector|results_regression||0.847||
+results_regression_ab276110|branch|7c25693610f166a3|1aeaffb41f26df6e|6c01de1f906773c8|-698103306||t19001.7007262447s|4f7108de728dd56a|319|rds|vector|results_regression||0.694|Loglik converged before variable  1  beta may be infinite.|
+results_regression_d1513cb3|branch|7130ce60d9eae063|1aeaffb41f26df6e|676bbbf17272ef09|-712435109||t19001.7007359564s|e8324796932fa831|400|rds|vector|results_regression||0.826|Loglik converged before variable  1  beta may be infinite.|
+results_regression_3c660c96|branch|f8bc21eaa7a8a542|1aeaffb41f26df6e|c8a3e2be7c6714cb|1989300259||t19001.70075144s|ddcd1827c84cc0ba|573|rds|vector|results_regression||1.325|Loglik converged before variable  1  beta may be infinite.|
+results_regression_4556d38e|branch|009854bba9638fdc|1aeaffb41f26df6e|63bb4649fa36d10b|-2000321423||t19001.7007580805s|09ba59ab403de298|314|rds|vector|results_regression||0.561||
+results_regression_3a672bcc|branch|a6e1458d82347a42|1aeaffb41f26df6e|777bc40006e1e953|300701687||t19001.7007678452s|7fc248283f487b24|392|rds|vector|results_regression||0.831||
+results_regression_53dff07d|branch|c87f4c2aba1dadf6|1aeaffb41f26df6e|4fd92ea0488f09d3|-1605118500||t19001.7007774986s|ad70a8dcd04daced|567|rds|vector|results_regression||0.821||
+results_regression_532979d8|branch|5b6688975314a7ac|1aeaffb41f26df6e|f66b55add1e11bca|2001314253||t19001.7007870087s|44d8296aaebe8c60|317|rds|vector|results_regression||0.809||
+results_regression_9289cbe6|branch|dbb97c2bb57d55c4|1aeaffb41f26df6e|a6f0bd846dc90d26|-698785302||t19001.7007966964s|f586e7aff6cad421|396|rds|vector|results_regression||0.823||
+results_regression_71d26878|branch|38738de7659392a5|1aeaffb41f26df6e|9e82c636585bf7e9|-1887380091||t19001.700806855s|ddcd1827c84cc0ba|573|rds|vector|results_regression||0.866||
+results_regression_671c2a99|branch|ebd906f7f148560d|1aeaffb41f26df6e|4ef4e5b5c4ea4e3a|1635700229||t19001.7008134116s|963debf989303649|304|rds|vector|results_regression||0.555||
+results_regression_2158962c|branch|bf5564d178c90739|1aeaffb41f26df6e|157426db5d934eed|-905251128||t19001.7008208414s|c4c272a184f75d8c|382|rds|vector|results_regression||0.628||
+results_regression_0838945a|branch|6b2cd695832819f7|1aeaffb41f26df6e|eaf463e61f00893b|-1423404019||t19001.7008307658s|cce5fe8eabf2775f|556|rds|vector|results_regression||0.844||
+results_regression_b5c20bc4|branch|0a237420a2a1d4ea|1aeaffb41f26df6e|ae9abe2dbcff0421|501857761||t19001.7008388105s|42453b716dfde1f4|311|rds|vector|results_regression||0.684|Loglik converged before variable  1  beta may be infinite.|
+results_regression_4ebc1dd8|branch|7d45ba02a3c8b8d2|1aeaffb41f26df6e|bff520bb4d12706d|491787227||t19001.7008486088s|a97bf76e690c0a49|388|rds|vector|results_regression||0.834|Loglik converged before variable  1  beta may be infinite.|
+results_regression_e623132a|branch|e1c53532fd62e43b|1aeaffb41f26df6e|c72e4ca855b96e2c|1420986731||t19001.7008639124s|225002ec50985cb1|561|rds|vector|results_regression||1.308|Loglik converged before variable  1  beta may be infinite.|
+results_regression_3ce753f1|branch|acc21990d1e6e1ca|1aeaffb41f26df6e|0c5b386411be0da4|1736455697||t19001.7008703879s|801cade07abe9db2|312|rds|vector|results_regression||0.548||
+results_regression_a6197fa2|branch|6776eb019f5a5315|1aeaffb41f26df6e|87075640acfee6fb|-477333019||t19001.7008803502s|89bf07396b5b1413|389|rds|vector|results_regression||0.847||
+results_regression_0e6829a0|branch|bca18384bd95c27f|1aeaffb41f26df6e|21e4b13a7cd88336|-807777132||t19001.7008900043s|49b5fca74495725e|564|rds|vector|results_regression||0.823||
+results_regression_ae08f804|branch|6845c1dd56c8376a|1aeaffb41f26df6e|14a59d0c2f684cc0|-1362855700||t19001.7009018046s|c98679baf4c2e099|315|rds|vector|results_regression||1.008||
+results_regression_6f209b1b|branch|02bda2552719b6ce|1aeaffb41f26df6e|da35f9fbe40d24e0|1151504363||t19001.7009089589s|24e075d0352ab5d9|394|rds|vector|results_regression||0.607||
+results_regression_336512c2|branch|9fa07f421ac05b8f|1aeaffb41f26df6e|8817d293bef44ddb|1531114497||t19001.7009215548s|63a9aa779fd9cd3d|570|rds|vector|results_regression||1.075||
+results_regression_309ec63a|branch|35a649a338b54ddf|1aeaffb41f26df6e|91dd229ebe58706a|-1650859016||t19001.7009281462s|d2d1db4a210f8f40|309|rds|vector|results_regression||0.557||
+results_regression_7b5f3c11|branch|88fdf9b66e2f9ac6|1aeaffb41f26df6e|bf8ecd9966510231|-55724307||t19001.7009354799s|a0cdeb7a83ca634e|391|rds|vector|results_regression||0.62||
+results_regression_1cb32fcf|branch|17c933058f224b5c|1aeaffb41f26df6e|72db22911d9d0201|1737245207||t19001.7009451455s|f3cf95d7b5806e03|565|rds|vector|results_regression||0.822||

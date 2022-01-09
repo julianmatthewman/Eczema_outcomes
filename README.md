@@ -1,5 +1,3 @@
-# Eczema_outcomes
+# Eczema outcomes
 
-A [workflowr][] project.
-
-[workflowr]: https://github.com/jdblischak/workflowr
+View the project website [here](https://julianmatthewman.github.io/Eczema_outcomes).

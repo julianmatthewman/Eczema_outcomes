@@ -13,12 +13,15 @@ library(tidyverse)
 library(DT)
 ```
 
-```{r, results='asis'}
-tar_load(combined_codelists)
+```{r}
+tar_load(c(codes, metadata))
 
-for (i in 1:length(combined_codelists)) {
-  cat("##### ",names(combined_codelists)[i],"\n")
-  print(combined_codelists[[i]])
-  cat('\n\n')
-}
+codes <- map(codes, as.character)
+table <- map2_dfr(.x=codes,
+                  .y=metadata$name,
+                  ~ tibble(code=.x,
+                           name=.y))
+table$name <- factor(table$name)
+
+datatable(table, filter = "top")
 ```
