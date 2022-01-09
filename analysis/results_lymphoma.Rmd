@@ -12,6 +12,7 @@ library(targets)
 library(tidyverse)
 library(DT)
 library(dagitty)
+source(knitr::purl("analysis/dags.Rmd")) # Get DAGs from other markdown document
 ```
 
 ## Specifications
@@ -27,7 +28,6 @@ exclusions <- c("none", "asthma")
 
 Specify relevant DAG:
 ```{r}
-source(knitr::purl("analysis/dags.Rmd")) # Get DAGs from other markdown document
 dag <- DAGs[["confounder_adjusted_simple"]]
 ```
 

@@ -393,16 +393,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree6915c208d535981eb49d08b2c1440b96340cdb37targetblank6915c20a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/6915c208d535981eb49d08b2c1440b96340cdb37" target="_blank">6915c20</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree89c9ab70f220cff87e391cd96a6bfa425350c806targetblank89c9ab7a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/89c9ab70f220cff87e391cd96a6bfa425350c806" target="_blank">89c9ab7</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree6915c208d535981eb49d08b2c1440b96340cdb37targetblank6915c20a" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomjulianmatthewmanEczemaoutcomestree89c9ab70f220cff87e391cd96a6bfa425350c806targetblank89c9ab7a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/6915c208d535981eb49d08b2c1440b96340cdb37" target="_blank">6915c20</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/julianmatthewman/Eczema_outcomes/tree/89c9ab70f220cff87e391cd96a6bfa425350c806" target="_blank">89c9ab7</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -420,14 +420,10 @@ Ignored files:
     Ignored:    renv/local/
     Ignored:    renv/staging/
 
-Untracked files:
-    Untracked:  dags.R
-
 Unstaged changes:
     Modified:   .DS_Store
-    Modified:   _targets/meta/meta
-    Modified:   analysis/DAGs.Rmd
     Modified:   analysis/results_fractures.Rmd
+    Modified:   analysis/results_lymphoma.Rmd
 
 </code></pre>
 <p>
@@ -466,6 +462,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/73dab080a39196dd83a4a0528ca5176c67b7c5ec/analysis/results_fractures.Rmd" target="_blank">73dab08</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2022-01-09
+</td>
+<td>
+updated all docs
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/julianmatthewman/Eczema_outcomes/73dab080a39196dd83a4a0528ca5176c67b7c5ec/docs/results_fractures.html" target="_blank">73dab08</a>
+</td>
+<td>
+julianmatthewman
+</td>
+<td>
+2022-01-09
+</td>
+<td>
+updated all docs
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -668,84 +698,6 @@ outcomes &lt;- c(&quot;fractures&quot;)
 models &lt;- c(&quot;crude&quot;, &quot;adjusted_sex&quot;, &quot;adjusted_sex_bmi&quot;)
 exclusions &lt;- c(&quot;none&quot;, &quot;lymphoma&quot;)</code></pre>
 <p>Specify relevant DAG:</p>
-<pre class="r"><code>source(knitr::purl(&quot;analysis/dags.Rmd&quot;)) # Get DAGs from other markdown document</code></pre>
-<pre><code>
-
-processing file: analysis/dags.Rmd</code></pre>
-<pre><code>
-  |                                                                            
-  |                                                                      |   0%
-  |                                                                            
-  |..........                                                            |  14%
-  |                                                                            
-  |....................                                                  |  29%
-  |                                                                            
-  |..............................                                        |  43%
-  |                                                                            
-  |........................................                              |  57%
-  |                                                                            
-  |..................................................                    |  71%
-  |                                                                            
-  |............................................................          |  86%
-  |                                                                            
-  |......................................................................| 100%</code></pre>
-<pre><code>output file: dags.R</code></pre>
-<pre><code>Warning: package &#39;ggdag&#39; was built under R version 4.0.2</code></pre>
-<pre><code>
-Attaching package: &#39;ggdag&#39;</code></pre>
-<pre><code>The following object is masked from &#39;package:stats&#39;:
-
-    filter</code></pre>
-<p><img src="figure/results_fractures.Rmd/unnamed-chunk-3-1.png" width="672" style="display: block; margin: auto;" /></p>
-<p>
-<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-3-1">
-Past versions of unnamed-chunk-3-1.png
-</button>
-</p>
-<div id="fig-unnamed-chunk-3-1" class="collapse">
-<div class="table-responsive">
-<table class="table table-condensed table-hover">
-<thead>
-<tr>
-<th>
-Version
-</th>
-<th>
-Author
-</th>
-<th>
-Date
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/3f3dfb60be1f025ad1b827e30eb00020bf73fa48/docs/figure/results_fractures.Rmd/unnamed-chunk-3-1.png" target="_blank">3f3dfb6</a>
-</td>
-<td>
-julianmatthewman
-</td>
-<td>
-2021-12-30
-</td>
-</tr>
-<tr>
-<td>
-<a href="https://github.com/julianmatthewman/Eczema_outcomes/blob/398525c137e534c4d93e16a860519da7f05c671b/docs/figure/results_fractures.Rmd/unnamed-chunk-3-1.png" target="_blank">398525c</a>
-</td>
-<td>
-julianmatthewman
-</td>
-<td>
-2021-12-04
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><img src="figure/results_fractures.Rmd/unnamed-chunk-3-2.png" width="672" style="display: block; margin: auto;" /><img src="figure/results_fractures.Rmd/unnamed-chunk-3-3.png" width="672" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>dag &lt;- DAGs[[&quot;confounder_adjusted_simple&quot;]]</code></pre>
 </div>
 <div id="inputs" class="section level2 tabset">
